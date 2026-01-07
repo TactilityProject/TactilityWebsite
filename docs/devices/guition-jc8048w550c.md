@@ -1,6 +1,4 @@
-# CYD JC8048W550C
-
-CYD or "Cheap Yellow Display". It is black but identifies as yellow.
+# Guition JC8048W550C
 
 ⚠️ Device does not power on with a proper USB-C to USB-C cable. Use a USB-C to USB-A cable instead.
 

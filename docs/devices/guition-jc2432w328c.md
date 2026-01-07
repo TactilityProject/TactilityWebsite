@@ -1,6 +1,4 @@
-# CYD JC2432W328C
-
-CYD or "Cheap Yellow Display". 
+# Guition JC2432W328C
 
 ⚠️ Device does not power on with a proper USB-C to USB-C cable. Use a USB-C to USB-A cable instead.
 

@@ -20,14 +20,15 @@ Recommendations:
 |[CYD 8048S043C](devices/cyd-8048s043c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[CYD E32R28T](devices/cyd-e32r28t.md)(\*)|🟧|🟩|4 MB|🟩|
 |[CYD E32R28T](devices/cyd-e32r32p.md)(\*)|🟧|🟩|4 MB|🟩|
-|[CYD JC2432W328C](devices/cyd-jc2432w328c.md)(\*)|🟧|🟩|4 MB|🟩|
-|[CYD JC8048W550C](devices/cyd-jc8048w550c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[Elecrow CrowPanel Advance 2.8"](devices/elecrow-crowpanel-advance-28.md)|🟩|🟩|16 MB|🟩|
 |[Elecrow CrowPanel Advance 3.5"](devices/elecrow-crowpanel-advance-35.md)|🟩|🟩|16 MB|🟩|
 |[Elecrow CrowPanel Advance 5.0"](devices/elecrow-crowpanel-advance-50.md)|🟩|🟩|16 MB|🟥|
 |[Elecrow CrowPanel Basic 2.8"](devices/elecrow-crowpanel-basic-28.md)|🟧|🟩|4 MB|🟩|
 |[Elecrow CrowPanel Basic 3.5"](devices/elecrow-crowpanel-basic-35.md)|🟧|🟩|4 MB|🟩|
 |[Elecrow CrowPanel Basic 5.0"](devices/elecrow-crowpanel-basic-50.md)|🟩|🟩|4 MB|🟥|
+|[Guition JC1060P470C-I-W-Y](devices/guition-jc1060p470ciwy.md)|🟩|🟩|16 MB|🟧|
+|[Guition JC2432W328C](devices/guition-jc2432w328c.md)(\*)|🟧|🟩|4 MB|🟩|
+|[Guition JC8048W550C](devices/guition-jc8048w550c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[LilyGO T-Deck](devices/lilygo-tdeck.md)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Deck Plus](devices/lilygo-tdeck-plus.md)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Lora Pager](devices/lilygo-tlora-pager.md)|🟩|🟩|16 MB|🟩|
