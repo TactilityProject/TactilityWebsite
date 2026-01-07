@@ -10,6 +10,11 @@
 - ⏳ Ethernet: Not yet implemented
 - ⏳ RTC: Not yet implemented
 
+## Known Issues
+
+⚠️ The display glitches when reading/writing files from SD card or flash.
+The core graphics driver glitches somewhat with the GraphicsDemo too, but the basics seem to work.
+
 ## Links
 
 - [AliExpress Guition Factory Store](https://www.aliexpress.com/item/1005010425193499.html) - Capacitive touch
