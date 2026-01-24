@@ -1,4 +1,4 @@
-This projects contains the content for the website at [tactility.one](https://tactility.one).
+This projects contains the content for the website at [tactilityproject.org](https://tactilityproject.org).
 
 It is built with [Docsify](https://docsify.js.org), which installs as follows:
 
