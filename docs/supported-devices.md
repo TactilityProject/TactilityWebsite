@@ -36,6 +36,7 @@ Recommendations:
 |[M5Stack Cardputer Adv](devices/m5stack-cardputer-adv.md)|🟧|🟩|8 MB|🟩|
 |[M5Stack Core2](devices/m5stack-core2.md)|🟩|🟩|16 MB|🟩|
 |[M5Stack CoreS3](devices/m5stack-cores3.md)|🟩|🟥|16 MB|🟩|
+|[M5Stack Core2](devices/m5stack-tab5.md)|🟩|🟩|16 MB|🟩|
 |[unPhone](devices/unphone.md)|🟩|🟩|8 MB|🟩|
 |[Waveshare ESP32 S3 Touch LCD 4.3"](devices/waveshare-s3-touch-lcd-43.md)|🟩|🟥|4 MB|🟥|
 |[Wireless Tag WT32 SC01 Plus](devices/wireless-tag-wt32-sc01-plus.md)(\*)|🟩|🟩|16 MB|🟥|
