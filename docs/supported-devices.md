@@ -28,6 +28,7 @@ Recommendations:
 |[Elecrow CrowPanel Basic 5.0"](devices/elecrow-crowpanel-basic-50.md)|🟩|🟩|4 MB|🟥|
 |[Guition JC1060P470C-I-W-Y](devices/guition-jc1060p470ciwy.md)|🟩|🟩|16 MB|🟧|
 |[Guition JC2432W328C](devices/guition-jc2432w328c.md)(\*)|🟧|🟩|4 MB|🟩|
+|[Guition JC3248W535C](devices/guition-jc3248w535c.md)(\*)|🟩|🟩|16 MB|🟩|
 |[Guition JC8048W550C](devices/guition-jc8048w550c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[LilyGO T-Deck](devices/lilygo-tdeck.md)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Deck Plus](devices/lilygo-tdeck-plus.md)|🟩|🟩|16 MB|🟩|
