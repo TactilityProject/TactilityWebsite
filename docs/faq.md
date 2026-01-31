@@ -2,20 +2,57 @@
 
 #### What is the purpose of Tactility?
 
-The main purpose is to create an open source platform for tinkerers/hobbyists. The secondary purpose is to build something that is usable by end-users.
+The main purpose is to create an open source platform for tinkerers/hobbyists.
+The secondary purpose is to build something that is usable by end-users.
 
-Tactility wants to offer a platform that can install on a wide range of ESP32 devices.
+The intent is to support a wide range of devices.
 
-#### How is Tactility different/similar to other platforms?
+#### What about other hardware targets?
 
-- Tactility runs native apps without flashing them to ROM. You can compile a native binary and upload it via WiFi on the fly. This allows you to use device for various purposes while developing new projects or features. The workflow compares more to mobile phone app development and less to classic microcontroller development.
-- Tactility provides a hardware abstraction layer that helps people write safe code (e.g. multi-threading).
-- Tactility provides various system services for easy hardware access (e.g. connecting to WiFi via service and via a user interface).
+Several ESP32 variants and Linux are currently supported.
+The software architecture is designed to be portable, so expanding support to additional platforms is feasible and likely over time.
 
-The main downside to Tactility's approach is that its background services come with a performance overhead, which is mainly a memory cost. When Wi-Fi is connect and an SD card is present, there's less than 100 kB of RAM left for running apps. Luckily there are plenty of devices that provide an extra 8MB PSRAM on top of that.
+#### Is it really an operating system?
 
-Additionally, the user interface can be completely disabled by an app at runtime. This allows an app to free up the display buffers, and drive the display (and other devices) directly via a special driver model. Once the app quits, the system can resume normally.
+Strictly speaking, any flashed ROM running on an ESP32 can be considered an operating system.
+Most existing solutions are built on top of FreeRTOS with application logic largely hard-coded into the firmware.
+
+Tactility, however, provides features typically associated with a general-purpose operating system:
+- A kernel with a driver model, kernel modules, and devicetree support
+- The ability to install and run native applications after flashing the OS
+- Background services (e.g. Wi-Fi management)
+- A software development kit for building native applications
+- And more
+
+#### What are the downsides of using Tactility compared to other platforms?
+
+When using the Tactility front-end (based on LVGL and a launcher application), memory pressure can become a concern.
+Display drivers typically require large contiguous memory buffers, and background services further increase memory usage.
+
+As a development platform, Tactility is less beginner-oriented than alternatives like the Arduino IDE.
+While it aims to be approachable, it has a steeper learning curve and targets developers who are comfortable with more system-level concepts.
 
 #### How does this relate to Flipper Zero?
 
-Initially, the project started as a [fork](https://github.com/KenVanHoeylandt/FlipperZeroEsp32) of Flipper Zero. Flipper Zero still serves as an inspiration, but so does Android, iOS and other platforms.
+The project originally started as a [fork](https://github.com/KenVanHoeylandt/FlipperZeroEsp32) of Flipper Zero.
+Although Flipper Zero remains a source of inspiration, Tactility also draws ideas from platforms such as Android, iOS, Zephyr and Linux.
+
+#### Why not implement this using Zephyr?
+
+Zephyr was not chosen initially because Tactility started as a relatively small project, and Zephyr has a significant learning curve.
+Although a migration was considered later, it was ultimately rejected due to Zephyr’s largely static device and driver configuration.
+
+One of Tactility’s goals is to support dynamic driver loading for peripherals.
+This would allow binary drivers to be stored on an SD card, avoiding unnecessary use of space in the main operating system partition.
+
+#### Why does Tactility not work with Launcher?
+
+At the time of writing, [Launcher](https://github.com/bmorcelli/Launcher) does not support Tactility.
+Launcher fails to load the data partitions required by Tactility, which prevents icons and other resources from being loaded from the filesystem.
+
+This limitation may be addressed in the future, but there is currently no known roadmap for doing so.
+
+#### Can I build closed-source applications?
+
+Yes. The Tactility SDK only includes licenses that permit the development and distribution of closed-source applications.
+
