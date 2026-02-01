@@ -4,7 +4,7 @@ Tactility is an operating system that focuses on the ESP32 microcontroller famil
 
 <div align="center" style="padding-top: 10pt; padding-bottom: 10pt;">
 Join us on Discord:<br/>
-<a href="https://discord.gg/pXs2xGS6f" alt="link to discord community"><img src="images/discord-logo.svg"/></a>
+<a href="https://discord.gg/pXs2xGS6fs" alt="link to discord community"><img src="images/discord-logo.svg"/></a>
 </div>
 
 
