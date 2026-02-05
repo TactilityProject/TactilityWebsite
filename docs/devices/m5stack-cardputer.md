@@ -1,5 +1,7 @@
 # M5Stack Cardputer & Cardputer v1.1
 
+To navigate, use the buttons up/down/enter. Make sure to press the `Fn` key to use the up and down arrow buttons.
+
 ## Features
 
 - ✅ SD card
