@@ -43,7 +43,7 @@ flash.ps COM3
 ## Development builds
 
 You can find some builds in GitHub if you are logged in there, but they are only available for a few days or weeks after they were built:
-- [Firmware builds](https://github.com/ByteWelder/Tactility/actions/workflows/build-firmware.yml)
+- [Firmware builds](https://github.com/TactilityProject/Tactility/actions/workflows/build.yml)
 - [SDK builds](https://github.com/ByteWelder/Tactility/actions/workflows/build-sdk.yml)
 
 (scroll down to the bottom to find the zip files)
