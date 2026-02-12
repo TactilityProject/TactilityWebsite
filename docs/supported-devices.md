@@ -32,13 +32,22 @@ Recommendations:
 |[Guition JC8048W550C](devices/guition-jc8048w550c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[LilyGO T-Deck](devices/lilygo-tdeck.md)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Deck Plus](devices/lilygo-tdeck-plus.md)|🟩|🟩|16 MB|🟩|
+|[LilyGO T-Display](devices/lilygo-tdisplay.md)(\*)|🟧|🟧|16 MB|🟩|
+|[LilyGO T-Display S3](devices/lilygo-tdisplay-s3.md)(\*)|🟩|🟩|16 MB|🟩|
+|[LilyGO T-Dongle S3](devices/lilygo-tdongle-s3.md)|🟧|🟩|16 MB|🟩|
 |[LilyGO T-Lora Pager](devices/lilygo-tlora-pager.md)|🟩|🟩|16 MB|🟩|
 |[M5Stack Cardputer](devices/m5stack-cardputer.md)|🟧|🟩|8 MB|🟩|
 |[M5Stack Cardputer Adv](devices/m5stack-cardputer-adv.md)|🟧|🟩|8 MB|🟩|
 |[M5Stack Core2](devices/m5stack-core2.md)|🟩|🟩|16 MB|🟩|
 |[M5Stack CoreS3](devices/m5stack-cores3.md)|🟩|🟥|16 MB|🟩|
+|[M5Stack StickC Plus](devices/m5stack-stickc-plus.md)|🟧|🟥|4 MB|🟩|
+|[M5Stack StickC Plus2](devices/m5stack-stickc-plus2.md)|🟩|🟥|8 MB|🟩|
 |[M5Stack Tab5](devices/m5stack-tab5.md)|🟩|🟩|16 MB|🟩|
 |[unPhone](devices/unphone.md)|🟩|🟩|8 MB|🟩|
+|[Waveshare ESP32 S3 GEEK](devices/waveshare-esp32-s3-geek.md)(\*)|🟩|🟩|16 MB|🟩|
+|[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩|16 MB|🟥|
+|[Waveshare ESP32 S3 Touch LCD 1.28"](devices/waveshare-s3-touch-lcd-128.md)|🟩|🟩|16 MB|🟥|
+|[Waveshare ESP32 S3 Touch LCD 1.47"](devices/waveshare-s3-touch-lcd-147.md)|🟩|🟩|16 MB|🟥|
 |[Waveshare ESP32 S3 Touch LCD 4.3"](devices/waveshare-s3-touch-lcd-43.md)|🟩|🟥|4 MB|🟥|
 |[Wireless Tag WT32 SC01 Plus](devices/wireless-tag-wt32-sc01-plus.md)(\*)|🟩|🟩|16 MB|🟥|
 
@@ -46,16 +55,7 @@ Incubating:
 
 |Name|Memory|SD card|ROM|Ext|
 |-|-|-|-|-|
-|[LilyGO T-Display](devices/lilygo-tdisplay.md)(\*)|🟧|🟧|16 MB|🟩|
-|[LilyGO T-Display S3](devices/lilygo-tdisplay-s3.md)(\*)|🟩|🟩|16 MB|🟩|
-|[LilyGO T-Dongle S3](devices/lilygo-tdongle-s3.md)|🟧|🟩|16 MB|🟩|
-|[M5Stack StickC Plus](devices/m5stack-stickc-plus.md)|🟧|🟥|4 MB|🟩|
-|[M5Stack StickC Plus2](devices/m5stack-stickc-plus2.md)|🟩|🟥|8 MB|🟩|
 |[M5Stack PaperS3](devices/m5stack-papers3.md)|🟩|🟩|16 MB|🟥|
-|[Waveshare ESP32 S3 GEEK](devices/waveshare-esp32-s3-geek.md)(\*)|🟩|🟩|16 MB|🟩|
-|[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩|16 MB|🟥|
-|[Waveshare ESP32 S3 Touch LCD 1.28"](devices/waveshare-s3-touch-lcd-128.md)|🟩|🟩|16 MB|🟥|
-|[Waveshare ESP32 S3 Touch LCD 1.47"](devices/waveshare-s3-touch-lcd-147.md)|🟩|🟩|16 MB|🟥|
 
 
 Memory: 🟧 = no external RAM, 🟩 = external RAM present

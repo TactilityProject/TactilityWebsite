@@ -8,6 +8,6 @@
   - [Supported Devices](supported-devices.md)
   - [FAQ](faq.md)
 - Development
-  - [docs.tactility.one](https://docs.tactilityproject.org)
+  - [docs.tactilityproject.org](https://docs.tactilityproject.org)
 - About
   - [Licenses & Copyrights](licenses-and-copyrights.md)
