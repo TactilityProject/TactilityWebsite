@@ -6,18 +6,18 @@ Tactility is an operating system that focuses on the ESP32 microcontroller famil
 <div style="display: flex; justify-content: center; align-items: center; gap: 60px; padding-bottom:10px;">
     <div style="text-align: center;">
         <a href="https://matrix.to/#/#tactility:matrix.org">
-            <img src="images/matrix-logo.svg" alt="link to matrix community"/>
+            <img src="images/matrix-logo.svg" width="140" alt="link to matrix community"/>
         </a>
     </div>
     <div style="text-align: center;">
-        <a href="https://discord.gg/pXs2xGS6fs">
-            <img src="images/discord-logo.svg" width="200" alt="link to discord community"/>
+        <a href="https://stt.gg/xwRTZEpX">
+            <img src="images/stoat-logo.svg" width="120" alt="link to Stoat.chat community"/>
         </a>
     </div>
 </div>
 
 <div align="center" style="margin-bottom:30px; opacity: 0.6;">
-Join us on Matrix (or Discord)
+Join us on Matrix or Stoat.chat<br/>(or <a href="https://discord.gg/pXs2xGS6fs">Discord</a>)
 </div>
 
 <div align="center">
