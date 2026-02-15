@@ -1,8 +1,10 @@
-# M5Stack StickC Plus
+# Heltec WiFi LoRa 32 v3
 
-⚠️ There is an issue with the display flickering when it updates. It's unclear what the cause is, but I'm suspecting the display driver as I investigated the AXP192 a lot already.
+⚠️ This device implementation is incubating
 
-⚠️ Must flash at one of these baud rates: 1500000, 750000, 500000, 250000, 115200 bps
+⚠️ There is an issue with the display driver, which causes pixels to be cut off on the right-side of the screen, and renders them on the next row.
+
+⚠️ The WebServer app starts, but it's not possible to see the password.
 
 Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
 

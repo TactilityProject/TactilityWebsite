@@ -2,7 +2,7 @@
 
 ⚠️ This device implementation is incubating
 
-The device is technically implemented, but there's currently no way to control it or put apps on it without forking the firmware and changing the code. Support for remote setup via Wi-Fi will be implemented at a later stage.
+Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
 
 ## Features
 

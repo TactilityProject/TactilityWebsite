@@ -1,5 +1,7 @@
 # Waveshare ESP32 S3 GEEK
 
+Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
+
 ## Features
 
 - ✅ USB Storage

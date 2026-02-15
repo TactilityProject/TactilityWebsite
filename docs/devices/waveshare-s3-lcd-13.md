@@ -1,6 +1,8 @@
 # Waveshare ESP32 S3 LCD 1.3"
 
-- ⚠️ No Touch: The only way to launch apps is to override the boot settings via SD card (see Tactility docs)
+⚠️ No Touch: The only way to launch apps is to override the boot settings via SD card (see Tactility docs)
+
+Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
 
 ## Features
 

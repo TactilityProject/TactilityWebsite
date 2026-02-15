@@ -3,6 +3,8 @@
 - ⚠️ Round Display: While this is technically working, the default Tactility launcher and apps currently don't support it.
 - ⚠️ Only 2MB PSRAM
 
+Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
+
 ## Features
 
 - ✅ SD card - available via common external sd card module you'd find on aliexpress with voltage regulator onboard. Others may work. And uses VSYS (5V) / GND / GPIO-15 / GPIO-16 / GPIO-17 / GPIO-18 pins on the JST SH 1.0 header.

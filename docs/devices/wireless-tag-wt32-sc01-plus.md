@@ -1,5 +1,7 @@
 # Wireless Tag WT32 SC01 Plus
 
+Because the device has very limited user input capabilities, it launches the web server application by default. The plan is to eventually enable navigation through the interface using its physical buttons.
+
 ## Features
 
 - ✅ SD card
@@ -9,6 +11,6 @@
 ## Links
 
 - [Product Info page](https://en.wireless-tag.com/product-item-26.html)
-- [Documentation Github](https://github.com/smartpanle/QMSD-ESP32-BSP)
-- [Documentation Github](https://github.com/smartpanle/PanelLan_esp32_arduino)
-- [Documentation Github (unofficial)](https://github.com/Cesarbautista10/WT32-SC01-Plus-ESP32)
+- [BSP repository](https://github.com/smartpanle/QMSD-ESP32-BSP)
+- [Driver & examples repository](https://github.com/smartpanle/PanelLan_esp32_arduino)
+- [Unofficial documentation repository](https://github.com/Cesarbautista10/WT32-SC01-Plus-ESP32)
