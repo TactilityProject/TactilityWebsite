@@ -58,7 +58,7 @@ Incubating:
 |Name|Memory|SD card|ROM|Ext|
 |-|-|-|-|-|
 |[M5Stack PaperS3](devices/m5stack-papers3.md)|🟩|🟩|16 MB|🟥|
-|[Heltec WiFi LoRa 32 v3](devices/heltec-wifi-lora-32-v3.md)|🟧|🟩|8 MB|🟥|
+|[Heltec WiFi LoRa 32 v3](devices/heltec-wifi-lora-32-v3.md)|🟧|🟥|8 MB|🟥|
 
 
 Memory: 🟧 = no external RAM, 🟩 = external RAM present
