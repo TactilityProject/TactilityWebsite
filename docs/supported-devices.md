@@ -13,6 +13,7 @@ Recommendations:
 |-|-|-|-|-|
 |[BigTreeTech Panda Touch & K Touch](devices/btt-panda-touch.md)(\*)|🟩|🟥|16 MB|🟥|
 |[CYD 2432S024C](devices/cyd-2432s024c.md)|🟧|🟩|4 MB|🟩|
+|[CYD 2432S024R](devices/cyd-2432s024r.md)|🟧|🟩|4 MB|🟩|
 |[CYD 2432S028R](devices/cyd-2432s028r.md)|🟧|🟩|4 MB|🟩|
 |[CYD 2432S028R v3](devices/cyd-2432s028rv3.md)|🟧|🟩|4 MB|🟩|
 |[CYD 2432S032C](devices/cyd-2432s032c.md)|🟧|🟩|4 MB|🟩|
