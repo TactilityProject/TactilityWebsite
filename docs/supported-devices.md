@@ -43,6 +43,7 @@ Recommendations:
 |[M5Stack Cardputer Adv](devices/m5stack-cardputer-adv.md)|🟧|🟩|8 MB|🟩|
 |[M5Stack Core2](devices/m5stack-core2.md)|🟩|🟩|16 MB|🟩|
 |[M5Stack CoreS3](devices/m5stack-cores3.md)|🟩|🟥|16 MB|🟩|
+|[M5Stack StackChan](devices/m5stack-stackchan.md)(\*)|🟩|🟩|16 MB|🟩|
 |[M5Stack StickC Plus](devices/m5stack-stickc-plus.md)|🟧|🟥|4 MB|🟩|
 |[M5Stack StickC Plus2](devices/m5stack-stickc-plus2.md)|🟩|🟥|8 MB|🟩|
 |[M5Stack StickS3](devices/m5stack-sticks3.md)(\*)|🟩|🟥|8 MB|🟩|

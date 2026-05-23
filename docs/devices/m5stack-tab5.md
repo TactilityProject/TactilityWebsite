@@ -6,9 +6,20 @@ Both hardware variants of the Tab5 are supported.
 
 - ✅ SD card
 - ✅ Wi-Fi via ESP32-C6
-- ✅ Sound (I2S)
 - ✅ IO Expanders (both)
-- ✅ BMI270
+- ✅ BMI270 IMU
+- ✅ INA226 Power Monitoring, Charging status, battery
+- ✅ Bluetooth (BLE)
+- ✅ I2S Speaker Output - ES8388
+- ✅ I2S Microphone Input - ES7210
+- ✅ Headphone detection / Speaker Mute
+- ✅ RX8130CE RTC
+- ⏳ USB Host (HID / MSC / MIDI) via the USB-A port - Coming Soon™️
+
+## Not yet implemented
+
+- Camera: SC2356 - requires i2c_master
+- RS485: SIT3088
 
 ## Links
 
