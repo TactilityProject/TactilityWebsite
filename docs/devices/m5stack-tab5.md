@@ -14,7 +14,8 @@ Both hardware variants of the Tab5 are supported.
 - ✅ I2S Microphone Input - ES7210
 - ✅ Headphone detection / Speaker Mute
 - ✅ RX8130CE RTC
-- ⏳ USB Host (HID / MSC / MIDI) via the USB-A port - Coming Soon™️
+- ✅ USB Host (HID / MSC / MIDI) via the USB-A port
+- ✅ Tab5 Keyboard addon
 
 ## Not yet implemented
 
@@ -26,3 +27,6 @@ Both hardware variants of the Tab5 are supported.
 - [Official documentation](https://docs.m5stack.com/en/core/Tab5)
 - [Official store](https://shop.m5stack.com/products/m5stack-tab5-iot-development-kit-esp32-p4)
 - [Espressif ESP-BSP](https://github.com/espressif/esp-bsp/tree/master/bsp/m5stack_tab5)
+- [Keyboard Official documentation](https://docs.m5stack.com/en/tab5/Tab5_Keyboard)
+- [Official store](https://shop.m5stack.com/products/keyboard-for-tab5)
+- [Tab5 Keyboard UserDemo](https://github.com/m5stack/M5Tab5-Keyboard-UserDemo)
