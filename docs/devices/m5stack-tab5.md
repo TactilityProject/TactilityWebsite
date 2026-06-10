@@ -15,6 +15,7 @@ Both hardware variants of the Tab5 are supported.
 - ✅ Headphone detection / Speaker Mute
 - ✅ RX8130CE RTC
 - ✅ USB Host (HID / MSC / MIDI) via the USB-A port
+- ✅ USB Mass Storage
 - ✅ Tab5 Keyboard addon
 
 ## Not yet implemented
