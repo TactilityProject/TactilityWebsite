@@ -44,7 +44,6 @@ Recommendations:
 |[M5Stack Core2](devices/m5stack-core2.md)|🟩|🟩|16 MB|🟩|
 |[M5Stack CoreS3](devices/m5stack-cores3.md)|🟩|🟥|16 MB|🟩|
 |[M5Stack StackChan](devices/m5stack-stackchan.md)(\*)|🟩|🟩|16 MB|🟩|
-|[M5Stack StickC Plus](devices/m5stack-stickc-plus.md)|🟧|🟥|4 MB|🟩|
 |[M5Stack StickC Plus2](devices/m5stack-stickc-plus2.md)|🟩|🟥|8 MB|🟩|
 |[M5Stack StickS3](devices/m5stack-sticks3.md)(\*)|🟩|🟥|8 MB|🟩|
 |[M5Stack Tab5](devices/m5stack-tab5.md)|🟩|🟩|16 MB|🟩|
@@ -53,7 +52,7 @@ Recommendations:
 |[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩|16 MB|🟥|
 |[Waveshare ESP32 S3 Touch LCD 1.28"](devices/waveshare-s3-touch-lcd-128.md)|🟩|🟩|16 MB|🟥|
 |[Waveshare ESP32 S3 Touch LCD 1.47"](devices/waveshare-s3-touch-lcd-147.md)|🟩|🟩|16 MB|🟥|
-|[Waveshare ESP32 S3 Touch LCD 4.3"](devices/waveshare-s3-touch-lcd-43.md)|🟩|🟥|4 MB|🟥|
+|[Waveshare ESP32 S3 Touch LCD 4.3"](devices/waveshare-s3-touch-lcd-43.md)|🟩|🟩|8 / 16 MB|🟥|
 |[Wireless Tag WT32 SC01 Plus](devices/wireless-tag-wt32-sc01-plus.md)(\*)|🟩|🟩|16 MB|🟥|
 
 Incubating:

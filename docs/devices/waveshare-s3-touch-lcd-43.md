@@ -4,8 +4,9 @@
 
 ## Features
 
-- ⏳ SD card: Not yet implemented
-- ⏳ USB Mass Storage: Not yet implemented
+- ✅ SD card
+- ✅ BLE
+- ✅ UART
 
 ## Links
 
