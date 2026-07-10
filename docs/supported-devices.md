@@ -34,6 +34,7 @@ Recommendations:
 |[Guition JC8048W550C](devices/guition-jc8048w550c.md)(\*)|🟩|🟩|16 MB|🟥|
 |[LilyGO T-Deck](devices/lilygo-tdeck.md)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Deck Plus](devices/lilygo-tdeck-plus.md)|🟩|🟩|16 MB|🟩|
+|[LilyGO T-Deck Plus](devices/lilygo-tdeck-max.md)|🟩|🟩|16 MB|🟥|
 |[LilyGO T-Display](devices/lilygo-tdisplay.md)(\*)|🟧|🟧|16 MB|🟩|
 |[LilyGO T-Display S3](devices/lilygo-tdisplay-s3.md)(\*)|🟩|🟩|16 MB|🟩|
 |[LilyGO T-Dongle S3](devices/lilygo-tdongle-s3.md)|🟧|🟩|16 MB|🟩|

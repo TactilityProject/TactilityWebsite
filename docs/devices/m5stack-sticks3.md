@@ -6,7 +6,6 @@
 - ✅ BMI270 IMU
 - ✅ Power/Battery status
 - ✅ USB Mass Storage
-- ✅ SD card via diy sd card module
 
 ## Links
 
