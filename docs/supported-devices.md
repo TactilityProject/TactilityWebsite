@@ -4,10 +4,12 @@ Any ESP32 device should be able to run Tactility, because drivers can be impleme
 Some hardware combinations are officially supported.
 
 Recommendations:
-- LilyGO: [LilyGO T-Deck Plus](devices/lilygo-tdeck-plus.md) is currently the best-supported device: all features are working and performance is great.
-- Elecrow: [CrowPanel Advance 2.8"](devices/elecrow-crowpanel-advance-28.md): This device also has great performance. It offers an extra USB UART and several external ports.
-- M5Stack: [Cardputer v1.1](devices/m5stack-cardputer.md)  [Cardputer Adv](devices/m5stack-cardputer-adv.md) are recommended. They lack PSRAM but have a keyboard, a battery and a grove connector.
-- CYD: [CYD 2432S032C](devices/cyd-2432s032c.md). This board lacks PSRAM, but it works very smoothly.
+- LilyGO [T-Deck Plus](devices/lilygo-tdeck-plus.md)
+- Elecrow [CrowPanel Advance 2.8"](devices/elecrow-crowpanel-advance-28.md)
+- M5Stack [Tab5](devices/m5stack-tab5.md), [Cardputer](devices/m5stack-cardputer.md) and [Cardputer Adv](devices/m5stack-cardputer-adv.md)
+- CYD [2432S032C](devices/cyd-2432s032c.md)
+
+The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most features.
 
 |Name|Memory|SD card|ROM|Ext|
 |-|-|-|-|-|
