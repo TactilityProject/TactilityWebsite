@@ -2,10 +2,12 @@
 
 ## Features
 
-- ✅ SD card
-- ✅ Power status
-- ✅ USB Storage
+- SD card
+- Power status
+- USB Storage
 - Keyboard
+- Trackball
+- Grove port
 
 ## Issues
 
