@@ -8,6 +8,10 @@
 - ✅ BLE
 - ✅ UART
 
+## Known Issues
+
+⚠️ Doesn't seem to support certain types of SD cards.
+
 ## Links
 
 - [Official website](https://www.waveshare.com/esp32-s3-touch-lcd-4.3.htm)

@@ -12,8 +12,9 @@
 
 ## Known Issues
 
-⚠️ The display glitches when reading/writing files from SD card or flash.
-The core graphics driver glitches somewhat with the GraphicsDemo too, but the basics seem to work.
+⚠️ The display sometimes glitches when reading/writing files from SD card.
+
+⚠️ Doesn't seem to support certain types of SD cards.
 
 ## Links
 
