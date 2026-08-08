@@ -1,6 +1,10 @@
 # M5Stack Tab5
 
-Both hardware variants of the Tab5 are supported.
+The following hardware variants of the Tab5 are supported:
+
+- Version 1 with `ILI9881C` display and `GT911` touch
+- Version 2 with `ST7123` display + touch
+- Version 3 with `ST7121` display + touch
 
 ## Features
 
@@ -17,10 +21,10 @@ Both hardware variants of the Tab5 are supported.
 - ✅ USB Host (HID / MSC / MIDI) via the USB-A port
 - ✅ USB Mass Storage
 - ✅ Tab5 Keyboard addon
+- ✅ Camera
 
 ## Not yet implemented
 
-- Camera: SC2356 - requires i2c_master
 - RS485: SIT3088
 
 ## Links
