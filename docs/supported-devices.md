@@ -51,6 +51,7 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[M5Stack StickC Plus2](devices/m5stack-stickc-plus2.md)|🟩|🟥|
 |[M5Stack StickS3](devices/m5stack-sticks3.md)(\*)|🟩|🟥|
 |[M5Stack Tab5](devices/m5stack-tab5.md)|🟩|🟩|
+|[Tulip Creative Computer 4r11](devices/tulip-creative-computer.md)|🟩|🟩|
 |[unPhone](devices/unphone.md)|🟩|🟩|
 |[Waveshare ESP32 S3 GEEK](devices/waveshare-esp32-s3-geek.md)(\*)|🟩|🟩|
 |[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩|
