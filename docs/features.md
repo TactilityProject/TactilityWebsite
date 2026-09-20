@@ -14,7 +14,7 @@ Several applications are included to boost productivity. You can have an off-gri
 
 ## Simulator
 
-Build and use the PC simulator to speed up development on Linux or Windows with WSL.
+Build and use the PC simulator to speed up development on Linux, macOS, or Windows with WSL.
 
 ## Hardware & Drivers
 
