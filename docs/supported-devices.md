@@ -15,6 +15,7 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |-|-|-|
 |[BigTreeTech Panda Touch & K Touch](devices/btt-panda-touch.md)(\*)|🟩|🟥|
 |[CL-32](devices/cl32.md)|🟩|🟩|
+|[CYD 2432S022C](devices/cyd-2432s022c.md)|🟧|🟩|
 |[CYD 2432S024C](devices/cyd-2432s024c.md)|🟧|🟩|
 |[CYD 2432S024R](devices/cyd-2432s024r.md)|🟧|🟩|
 |[CYD 2432S028R](devices/cyd-2432s028r.md)|🟧|🟩|
