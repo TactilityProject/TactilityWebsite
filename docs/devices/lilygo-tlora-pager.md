@@ -10,6 +10,13 @@
 - ✅ GPS (GNSS via MIA-M10Q)
 - ✅ Haptics (basic driver support, vibrate on boot)
 
+## Keyboard
+
+Note: `SYM` refers to the yellow button in the lower-left corner.
+
+- Press `SYM`+`SPACE` for `TAB`
+- Press `SYM`+`ENTER` for `ESC`
+
 ## Not yet implemented
 
 - LoRa: Semtech SX1262
