@@ -42,6 +42,8 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[LilyGO T-Display](devices/lilygo-tdisplay.md)(\*)|🟧|🟥|
 |[LilyGO T-Display S3](devices/lilygo-tdisplay-s3.md)(\*)|🟩|🟩|
 |[LilyGO T-Dongle S3](devices/lilygo-tdongle-s3.md)|🟧|🟩|
+|[LilyGO T-Embed CC1101](devices/lilygo-tembed-cc1101.md)|🟩|🟩|
+|[LilyGO T-Embed CC1101 Plus](devices/lilygo-tembed-cc1101-plus.md)|🟩|🟩|
 |[LilyGO T-Lora Pager](devices/lilygo-tlora-pager.md)|🟩|🟩|
 |[LilyGO T-HMI](devices/lilygo-thmi.md)(\*)|🟩|🟩|
 |[M5Stack Cardputer](devices/m5stack-cardputer.md)|🟧|🟩|
