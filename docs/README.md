@@ -22,10 +22,21 @@ Join us on Matrix or Stoat.chat<br/>(or <a href="https://discord.gg/pXs2xGS6fs">
 
 <div align="center">
 
-![photo of devices running Tactility](images/tactility-devices.webp)&nbsp;&nbsp;![screenshot of desktop app](images/screenshot-Launcher.png)
-
-![screenshot off app list app](images/screenshot-AppList.png)&nbsp;&nbsp;![screenshot of settings app](images/screenshot-Settings.png)
-
+<div>
+  <img src="images/screenshot-Launcher.png" alt="screenshot of launcher app"
+       style="border: 2pt solid #000;">
+  &nbsp;
+  <img src="images/screenshot-Settings.png" alt="screenshot off settings app"
+       style="border: 2pt solid #000;">
+</div>
+&nbsp;
+<div>
+  <img src="images/screenshot-Terminal.png" alt="screenshot of terminal app"
+       style="border: 2pt solid #000;">
+  &nbsp;
+  <img src="images/screenshot-Files.png" alt="screenshot of files app"
+       style="border: 2pt solid #000;">
+</div>
 
 Use one of the [supported devices](supported-devices.md),<br/>
 or set up the drivers for your own hardware combination.
