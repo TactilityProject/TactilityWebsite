@@ -46,6 +46,7 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[LilyGO T-Embed CC1101 Plus](devices/lilygo-tembed-cc1101-plus.md)|🟩|🟩|
 |[LilyGO T-Lora Pager](devices/lilygo-tlora-pager.md)|🟩|🟩|
 |[LilyGO T-HMI](devices/lilygo-thmi.md)(\*)|🟩|🟩|
+|[LilyGO T5 4.7 Inch E-Paper S3](devices/lilygo-t5-47.md)(\*)|🟩|🟩|
 |[M5Stack Cardputer](devices/m5stack-cardputer.md)|🟧|🟩|
 |[M5Stack Cardputer Adv](devices/m5stack-cardputer-adv.md)|🟧|🟩|
 |[M5Stack Core2](devices/m5stack-core2.md)|🟩|🟩|
