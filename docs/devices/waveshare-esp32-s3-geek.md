@@ -8,7 +8,7 @@
 | External UART | ✅ | JST PH 1.0 header: GPIO-44 (RX), GPIO-43 (TX) |
 | Bluetooth | ✅ | BLE |
 | Backlight control | ✅ | Brightness control |
-| USB Mass Storage | ⚠️ | Not yet verified |
+| USB Mass Storage | ✅ | |
 | Touch | ❌ | No touchscreen |
 
 ## Usage notes

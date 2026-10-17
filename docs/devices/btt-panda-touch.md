@@ -9,7 +9,7 @@
 | Bluetooth | ✅ | BLE |
 | Touch | ✅ | `GT911` |
 | Backlight control | ✅ | Brightness control |
-| USB Mass Storage | 🚧 | May be possible via the USB-A OTG host/device port |
+| USB Mass Storage | ✅ | Possible with USB Host via the USB-A OTG host/device port |
 | SD card | ❌ | Not present on the hardware, see USB Mass Storage |
 
 ## Links

@@ -11,10 +11,6 @@
 | Backlight control | ✅ | Brightness control |
 | External ports | 🚧 | JST SH 1.25: debug (UART), extended IO, speaker, RS485 |
 
-## Usage notes
-
-The device has very limited input, so it starts the Web Server app by default. Navigation with the physical buttons is planned.
-
 ## Links
 
 - [Product page](https://en.wireless-tag.com/product-item-26.html)

@@ -16,6 +16,7 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[CYD 2432S028R v3](devices/cyd-2432s028rv3.md)|🟧|🟩| |
 |[CYD 2432S032C](devices/cyd-2432s032c.md)|🟧|🟩|⭐|
 |[CYD 3248S035C](devices/cyd-3248s035c.md)(\*)|🟧|🟩| |
+|[CYD 4827S043C](devices/cyd-4827s043c.md)(\*)|🟩|🟩| |
 |[CYD 4848S040C](devices/cyd-4848s040c.md)|🟩|🟩| |
 |[CYD 8048S043C](devices/cyd-8048s043c.md)(\*)|🟩|🟩| |
 |[CYD E32R28T](devices/cyd-e32r28t.md)(\*)|🟧|🟩| |
