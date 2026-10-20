@@ -20,8 +20,6 @@
 
 ## Usage notes
 
-The device has very limited input, so it starts the Web Server app by default. Navigation with the physical buttons is planned.
-
 SD card: use a common external SD card module with an onboard voltage regulator, as found on AliExpress. Other modules may work. Connect it to the JST SH 1.0 header: VSYS (5V), GND, GPIO-15, GPIO-16, GPIO-17 and GPIO-18.
 
 ## Links

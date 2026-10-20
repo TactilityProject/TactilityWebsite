@@ -1,13 +1,14 @@
 # LilyGO T-Dongle S3
 
 > [!NOTE]
-> Support for this device is incubating. It runs Tactility, but there's currently no way to control it or install apps without forking the firmware and changing the code. Remote setup via Wi-Fi is planned.
+> Support for this device is incubating. It runs Tactility and has a single button for navigation, but there's currently no easy way to install apps.
 
 ## Feature support
 
 | Feature | Status | Notes |
 |-|-|-|
 | SD card | ✅ | |
+| Button navigation | ✅ | Via the BOOT button (GPIO-0) |
 | USB Mass Storage | ✅ | |
 | Bluetooth | ✅ | BLE |
 | Backlight control | ✅ | Brightness control |

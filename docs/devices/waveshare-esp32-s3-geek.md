@@ -4,16 +4,13 @@
 
 | Feature | Status | Notes |
 |-|-|-|
+| Button navigation | ✅ | Via the BOOT button (GPIO-0) |
 | External I2C | ✅ | JST PH 1.0 header: GPIO-16 (SDA), GPIO-17 (SCL) |
 | External UART | ✅ | JST PH 1.0 header: GPIO-44 (RX), GPIO-43 (TX) |
 | Bluetooth | ✅ | BLE |
 | Backlight control | ✅ | Brightness control |
 | USB Mass Storage | ✅ | |
 | Touch | ❌ | No touchscreen |
-
-## Usage notes
-
-The device has very limited input, so it starts the Web Server app by default. Navigation with the physical buttons is planned.
 
 ## Links
 

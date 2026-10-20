@@ -14,14 +14,9 @@
 | Bluetooth | ✅ | BLE |
 | Touch | ❌ | No touchscreen |
 
-## Usage notes
-
-The device has very limited input, so it starts the Web Server app by default. Navigation with the physical buttons is planned.
-
 ## Known issues
 
 - Display: pixels on the right side of the screen are cut off and rendered on the next row.
-- Web Server: the app starts, but the password can't be viewed on the device.
 
 ## Links
 

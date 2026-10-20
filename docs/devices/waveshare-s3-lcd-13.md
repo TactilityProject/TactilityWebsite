@@ -1,5 +1,8 @@
 # Waveshare ESP32 S3 LCD 1.3"
 
+> [!NOTE]
+> Support for this device is incubating.
+
 > [!WARNING]
 > This device has no touchscreen. The only way to launch apps is to override the boot settings via the SD card (see the Tactility docs).
 
@@ -16,10 +19,6 @@
 | RGB LED | 🚧 | `WS2812` on GPIO-15 |
 | USB Mass Storage | ❌ | The USB port is wired to a `CH343P` USB-serial chip instead of the native ESP32-S3 USB pins |
 | Touch | ❌ | No touchscreen |
-
-## Usage notes
-
-The device has very limited input, so it starts the Web Server app by default. Navigation with the physical buttons is planned.
 
 ## Links
 

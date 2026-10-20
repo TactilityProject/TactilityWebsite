@@ -55,7 +55,6 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[Tulip Creative Computer 4r11](devices/tulip-creative-computer.md)(\*)|🟩|🟩| |
 |[unPhone](devices/unphone.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 GEEK](devices/waveshare-esp32-s3-geek.md)(\*)|🟩|🟩| |
-|[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 Touch LCD 1.28"](devices/waveshare-s3-touch-lcd-128.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 Touch LCD 1.47"](devices/waveshare-s3-touch-lcd-147.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 Touch LCD 4.3"](devices/waveshare-s3-touch-lcd-43.md)|🟩|🟩| |
@@ -67,6 +66,7 @@ Incubating:
 |-|-|-|-|
 |[Heltec WiFi LoRa 32 v3](devices/heltec-wifi-lora-32-v3.md)|🟧|🟥| |
 |[LilyGO T5 4.7 Inch E-Paper S3](devices/lilygo-t5-47.md)(\*)|🟩|🟩| |
+|[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩| |
 
 
 Memory: 🟧 = no external RAM, 🟩 = external RAM present
