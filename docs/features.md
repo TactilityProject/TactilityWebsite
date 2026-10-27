@@ -19,7 +19,7 @@ Tactility comes with the apps you need to use and explore your device:
 - **Files**: browse, create, copy and move files and folders on the internal storage and SD card.
 - **Terminal**: a command-line shell, right on the device. Run native apps and shell scripts straight from the SD card.
 - **Mesh**: Chat in public or private channels, or with your contacts.
-- **Notes**, **Image Viewer**, **Camera**, **I2C Scanner**, **System Info** and **Screenshot**.
+- **Notes**, **Image Viewer**, **Camera**, **I2C Scanner**, **System Info** and more.
 - **Settings** for Wi-Fi, Bluetooth, the device appearance and much more.
 
 ## App Hub
