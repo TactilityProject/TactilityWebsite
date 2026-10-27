@@ -19,9 +19,9 @@ Tactility comes with the apps you need to use and explore your device:
 - **Files**: browse, create, copy and move files and folders on the internal storage and SD card.
 - **Terminal**: a command-line shell, right on the device. Run native apps and shell scripts straight from the SD card.
 - **Chat**: off-grid messaging between nearby devices over ESP-NOW. No Wi-Fi network or internet needed.
-- **Mesh tools**: inspect and configure LoRa mesh networks on supported devices.
+- **Mesh**: Chat in public or private channels, or with your contacts.
 - **Notes**, **Image Viewer**, **Camera**, **I2C Scanner**, **System Info** and **Screenshot**.
-- **Settings** for Wi-Fi, Bluetooth, display, audio, GPS, USB, locale, time zone and themes.
+- **Settings** for Wi-Fi, Bluetooth, the device appearance and much more.
 
 ## App Hub
 
@@ -29,18 +29,19 @@ Install more apps straight from the device with the App Hub. Examples include a 
 
 ## Connectivity
 
-- **Wi-Fi**: connect to a network, or turn the device into an access point.
+- **Wi-Fi**: connect to a network.
 - **Bluetooth**: Bluetooth Low Energy on supported devices.
-- **LoRa mesh networking**: join [Meshtastic](https://meshtastic.org) and [MeshCore](https://meshcore.co.uk) networks on devices with a LoRa radio.
+- **Mesh networking**: join [Meshtastic](https://meshtastic.org) and [MeshCore](https://meshcore.co.uk) networks on devices with a LoRa radio or via ESP-NOW.
 - **Web dashboard**: manage your device from a browser. Upload and download files, install and run apps, take screenshots and view system information.
 - **USB**: use the device as a USB drive to copy files from your computer. Some devices can also act as a USB host for keyboards, storage and MIDI devices.
 
 ## Build your own apps
 
-- **Apps on an SD card**: build apps, put them on an SD card and run them. No need to rebuild the firmware.
-- **LVGL or raw pixels**: use [LVGL](https://lvgl.io) for consistent user interfaces, or push pixels directly to the display with the core display driver.
-- **Install over Wi-Fi**: enable the "Development" feature in the settings to install and run apps from your PC over Wi-Fi.
-- **PC simulator**: build and test on Linux, macOS, or Windows with WSL, without flashing a device.
+- **Apps on an SD card**: build graphical or terminal apps, put them on an SD card and run them. No need to rebuild the firmware.
+- **Not just apps**: Downloadable app packages can contain driver modules or background services that are always available after boot.
+- **LVGL or raw pixels**: use [LVGL](https://lvgl.io) for consistent user interfaces, or push pixels directly to the display with the core display driver for even higher performance rendering.
+- **Install over Wi-Fi**: enable the "Development" feature in the settings to install and run apps from your PC over Wi-Fi. You can also transfer files or open a remote terminal/shell.
+- **PC simulator**: build and test on Linux, macOS, or Windows with WSL, without flashing a device. The simulator has multiple device profiles, so you can change the display size and launcher appearance.
 - See the [developer documentation](https://docs.tactilityproject.org) to get started.
 
 ## Hardware and drivers
