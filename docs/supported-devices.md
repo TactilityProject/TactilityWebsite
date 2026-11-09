@@ -64,6 +64,7 @@ Incubating:
 
 |Name|Memory|SD card|Badge|
 |-|-|-|-|
+|[Espressif ESP-Mosaico](devices/espressif-esp-mosaico.md)|🟩|🟩| |
 |[Heltec WiFi LoRa 32 v3](devices/heltec-wifi-lora-32-v3.md)|🟧|🟥| |
 |[LilyGO T5 4.7 Inch E-Paper S3](devices/lilygo-t5-47.md)(\*)|🟩|🟩| |
 |[Waveshare ESP32 S3 LCD 1.3"](devices/waveshare-s3-lcd-13.md)|🟩|🟩| |
