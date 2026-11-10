@@ -54,6 +54,7 @@ The [Tab5](devices/m5stack-tab5.md) currently performs best and has the most fea
 |[Seeed Studio Wio Tracker L2 Pro](devices/seeed-wio-tracker-l2-pro.md)(\*)|🟩|🟩| |
 |[Tulip Creative Computer 4r11](devices/tulip-creative-computer.md)(\*)|🟩|🟩| |
 |[unPhone](devices/unphone.md)|🟩|🟩| |
+|[Waveshare ESP32 S3 ePaper 3.97"](devices/waveshare-esp32-s3-epaper-397.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 GEEK](devices/waveshare-esp32-s3-geek.md)(\*)|🟩|🟩| |
 |[Waveshare ESP32 S3 Touch LCD 1.28"](devices/waveshare-s3-touch-lcd-128.md)|🟩|🟩| |
 |[Waveshare ESP32 S3 Touch LCD 1.47"](devices/waveshare-s3-touch-lcd-147.md)|🟩|🟩| |
