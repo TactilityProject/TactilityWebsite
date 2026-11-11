@@ -297,6 +297,24 @@ h1 .star { font-size: 0.9rem; padding-inline: 0.6rem; }
 .markdown-alert-tip { --alert: var(--green); }
 .markdown-alert-important { --alert: var(--pink); }
 
+/* Tabbed card (":::: tabs" in markdown): radio buttons pick the visible panel */
+.tabs { display: flex; flex-wrap: wrap; margin: 1.5rem 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.tab-input { position: absolute; opacity: 0; pointer-events: none; }
+.tab-label { padding: 0.7rem 1.2rem; border-bottom: 2px solid transparent; color: var(--muted); font-weight: 600; font-size: 0.95rem; cursor: pointer; }
+.tab-label:hover { color: var(--heading); }
+.tab-input:checked + .tab-label { border-bottom-color: var(--blue); color: var(--heading); }
+.tab-input:focus-visible + .tab-label { outline: 2px solid var(--blue); outline-offset: -2px; }
+.tab-panel { display: none; order: 1; width: 100%; padding: 1.25rem 1.4rem 0.4rem; border-top: 1px solid var(--border); }
+.tab-input:checked + .tab-label + .tab-panel { display: block; }
+.tab-panel pre { background: var(--bg); }
+
+/* Option cards at the top of a page (frontmatter "options") */
+.options { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 0 0 2.5rem; }
+.option { display: flex; flex-direction: column; align-items: flex-start; padding: 1.4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.prose .option h2 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+.prose .option p { flex: 1; margin: 0 0 1.25rem; color: var(--muted); font-size: 0.95rem; }
+.prose .option .btn { text-decoration: none; }
+
 /* Device directory */
 
 .device-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 2rem 0 0; }

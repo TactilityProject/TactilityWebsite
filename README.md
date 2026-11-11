@@ -28,4 +28,11 @@ npm run build
 - `docs/_includes/`: page layouts.
 - `docs/assets/site.css`: the stylesheet.
 
+## Markdown extras
+
+- Alerts: `> [!NOTE]` and `> [!WARNING]` blocks.
+- Tabbed card: wrap `::: tab <Title>` blocks in `:::: tabs` ... `::::` (see `docs/installing.md`).
+- Option cards with a button at the top of a page: `options:` in the frontmatter (see `docs/installing.md`).
+- A paragraph of linked images is shown as a row of logos (see `docs/community.md`).
+
 Pushing to `main` builds and publishes the site with GitHub Actions (`.github/workflows/deploy.yml`).

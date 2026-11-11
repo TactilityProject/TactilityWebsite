@@ -4,6 +4,7 @@ import fs from "node:fs";
 import markdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import alerts from "markdown-it-github-alerts";
+import container from "markdown-it-container";
 
 const fonts = "node_modules/@fontsource-variable";
 
@@ -12,11 +13,44 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Tabbed card in markdown, without JavaScript (radio buttons + CSS):
+  //   :::: tabs
+  //   ::: tab Linux / macOS
+  //   ...
+  //   :::
+  //   ::: tab Windows
+  //   ...
+  //   :::
+  //   ::::
+  let tabGroup = 0;
+  let tabIndex = 0;
+  const escapeHtml = markdownIt().utils.escapeHtml;
+
   eleventyConfig.setLibrary(
     "md",
     markdownIt({ html: true, linkify: true })
       .use(anchor, { permalink: anchor.permalink.headerLink({ safariReaderFix: true }) })
-      .use(alerts),
+      .use(alerts)
+      .use(container, "tabs", {
+        render(tokens, idx) {
+          if (tokens[idx].nesting !== 1) return "</div>\n";
+          tabGroup++;
+          tabIndex = 0;
+          return '<div class="tabs">\n';
+        },
+      })
+      .use(container, "tab", {
+        render(tokens, idx) {
+          if (tokens[idx].nesting !== 1) return "</div>\n";
+          const title = escapeHtml(tokens[idx].info.trim().replace(/^tab\s*/, ""));
+          const id = `tab-${tabGroup}-${++tabIndex}`;
+          const checked = tabIndex === 1 ? " checked" : "";
+          return (
+            `<input class="tab-input" type="radio" name="tabs-${tabGroup}" id="${id}"${checked}>` +
+            `<label class="tab-label" for="${id}">${title}</label>\n<div class="tab-panel">\n`
+          );
+        },
+      }),
   );
 
   eleventyConfig.addGlobalData("layout", "page");

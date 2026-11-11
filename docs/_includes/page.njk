@@ -4,6 +4,17 @@ layout: base
 <div class="wrap page{% if toc %} has-toc{% endif %}">
   <article class="prose">
     <h1>{{ title }}</h1>
+    {%- if options %}
+    <div class="options">
+      {%- for option in options %}
+      <section class="option">
+        <h2>{{ option.title }}</h2>
+        <p>{{ option.text }}</p>
+        <a class="btn{% if option.primary %} btn-primary{% endif %}" href="{{ option.url }}">{{ option.label }}</a>
+      </section>
+      {%- endfor %}
+    </div>
+    {%- endif %}
     {{ content | safe }}
   </article>
   {%- if toc %}
