@@ -1,4 +1,12 @@
-# LilyGO T-Display S3
+---
+title: "LilyGO T-Display S3"
+vendor: LilyGO
+psram: true
+sdcard: false
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

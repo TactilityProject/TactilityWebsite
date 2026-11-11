@@ -1,4 +1,12 @@
-# Seeed Studio Wio Tracker L2 Pro
+---
+title: "Seeed Studio Wio Tracker L2 Pro"
+vendor: Seeed Studio
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

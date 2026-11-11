@@ -1,0 +1,92 @@
+---
+layout: base
+---
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1>{{ tagline }}</h1>
+      <p class="lead">{{ lead }}</p>
+      <p class="actions">
+        {%- for action in actions %}
+        <a class="btn{% if action.primary %} btn-primary{% endif %}" href="{{ action.url }}">{{ action.label }}</a>
+        {%- endfor %}
+      </p>
+    </div>
+    {%- set shot = screenshots | first %}
+    {%- set size = shot.src | pngSize %}
+    <figure class="bezel hero-shot"><img src="{{ shot.src }}"{% if size %} width="{{ size.width }}" height="{{ size.height }}"{% if size.width <= 320 %} class="pixel"{% endif %}{% endif %} alt="{{ shot.alt }}"></figure>
+  </div>
+</section>
+
+<section class="wrap shots">
+  <div class="shots-track" id="shots-track" role="region" aria-label="Screenshots" tabindex="0">
+    {%- for shot in screenshots %}{% if not loop.first %}
+    <figure class="bezel">
+      {%- set size = shot.src | pngSize %}
+      <img src="{{ shot.src }}"{% if size %} width="{{ size.width }}" height="{{ size.height }}"{% if size.height <= 240 %} class="pixel"{% endif %}{% endif %} alt="{{ shot.alt }}" loading="lazy">
+      {%- if shot.caption %}<figcaption>{{ shot.caption }}</figcaption>{% endif %}
+    </figure>
+    {%- endif %}{% endfor %}
+  </div>
+  <p class="shots-nav" id="shots-nav" hidden>
+    <button type="button" data-dir="-1" aria-label="Previous screenshots">←</button>
+    <button type="button" data-dir="1" aria-label="Next screenshots">→</button>
+  </p>
+</section>
+<script>
+  (function () {
+    var track = document.getElementById("shots-track");
+    var nav = document.getElementById("shots-nav");
+    var buttons = [].slice.call(nav.querySelectorAll("button"));
+    function update() {
+      var max = track.scrollWidth - track.clientWidth;
+      nav.hidden = max <= 1;
+      buttons[0].disabled = track.scrollLeft <= 1;
+      buttons[1].disabled = track.scrollLeft >= max - 1;
+    }
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var item = track.querySelector(".bezel");
+        var step = item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || 0);
+        var count = Math.max(1, Math.floor(track.clientWidth / step));
+        track.scrollBy({ left: button.dataset.dir * step * count, behavior: "smooth" });
+      });
+    });
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+</script>
+
+<section class="wrap highlights">
+  {%- for item in highlights %}
+  <a class="card" href="{{ item.url }}">
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.text }}</p>
+  </a>
+  {%- endfor %}
+</section>
+
+<section class="wrap home-body prose">
+  {{ content | safe }}
+</section>
+
+<section class="wrap community">
+  <h2>Join the community</h2>
+  <p class="community-links">
+    {%- for item in site.community %}
+    <a href="{{ item.url }}">
+      {%- if item.logo %}<img src="{{ item.logo }}" alt="{{ item.name }}" height="36">{% else %}{{ item.name }}{% endif -%}
+    </a>
+    {%- endfor %}
+  </p>
+</section>
+
+<section class="wrap supporters">
+  <h2>Supported by</h2>
+  <p>
+    {%- for item in supporters %}
+    <a href="{{ item.url }}"><img src="{{ item.logo }}" alt="{{ item.name }}" height="44" loading="lazy"></a>
+    {%- endfor %}
+  </p>
+</section>

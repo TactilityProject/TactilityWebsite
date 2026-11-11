@@ -1,4 +1,12 @@
-# M5Stack Tab5
+---
+title: "M5Stack Tab5"
+vendor: M5Stack
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Hardware variants
 

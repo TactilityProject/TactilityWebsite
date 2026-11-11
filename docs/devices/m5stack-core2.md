@@ -1,4 +1,12 @@
-# M5Stack Core2
+---
+title: "M5Stack Core2"
+vendor: M5Stack
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > Only the [original](https://docs.m5stack.com/en/core/Core2) version is supported, not [v1.1](https://docs.m5stack.com/en/core/Core2%20v1.1).

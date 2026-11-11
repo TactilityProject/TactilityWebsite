@@ -1,4 +1,12 @@
-# Guition JC1060P470C-I-W-Y
+---
+title: "Guition JC1060P470C-I-W-Y"
+vendor: Guition
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

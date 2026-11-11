@@ -1,0 +1,15 @@
+{
+  "main": [
+    { "label": "Features", "url": "/features/" },
+    { "label": "Install", "url": "/installing/" },
+    { "label": "Devices", "url": "/devices/" },
+    { "label": "FAQ", "url": "/faq/" },
+    { "label": "Support", "url": "/support/" },
+    { "label": "Docs", "url": "https://docs.tactilityproject.org", "external": true }
+  ],
+  "footer": [
+    { "label": "Licenses & Copyrights", "url": "/licenses-and-copyrights/" },
+    { "label": "Developer documentation", "url": "https://docs.tactilityproject.org" },
+    { "label": "GitHub", "url": "https://github.com/TactilityProject" }
+  ]
+}

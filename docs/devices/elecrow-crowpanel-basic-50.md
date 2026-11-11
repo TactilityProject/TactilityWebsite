@@ -1,4 +1,12 @@
-# Elecrow CrowPanel Basic 5.0"
+---
+title: "Elecrow CrowPanel Basic 5.0\""
+vendor: Elecrow
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

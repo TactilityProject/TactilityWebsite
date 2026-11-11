@@ -1,4 +1,12 @@
-# unPhone
+---
+title: "unPhone"
+vendor: unPhone
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > Only version 9 of the hardware is supported.

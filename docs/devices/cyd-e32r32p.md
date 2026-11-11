@@ -1,4 +1,12 @@
-# CYD E32R32P
+---
+title: "CYD E32R32P"
+vendor: CYD
+psram: false
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 A CYD ("Cheap Yellow Display") board.
 

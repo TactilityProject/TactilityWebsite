@@ -1,4 +1,12 @@
-# LilyGO T-Deck Plus
+---
+title: "LilyGO T-Deck Plus"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

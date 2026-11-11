@@ -1,4 +1,7 @@
-# Licenses & Copyrights
+---
+title: "Licenses & Copyrights"
+description: "Licensing of the Tactility operating system, SDK and apps."
+---
 
 ## Tactility
 

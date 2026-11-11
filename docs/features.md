@@ -1,4 +1,8 @@
-# Features
+---
+title: "Features"
+description: "What Tactility offers: apps, App Hub, Wi-Fi, Bluetooth, mesh networking, app development and driver support for ESP32 devices."
+toc: true
+---
 
 Tactility turns ESP32 hardware into a small computer with a real operating system: a launcher, apps, settings, file management and connectivity, all ready to go.
 Install it from your browser, then add apps from the App Hub or build your own.
@@ -8,7 +12,7 @@ Install it from your browser, then add apps from the App Hub or build your own.
 More than 50 devices are supported out of the box, from handhelds with keyboards like the LilyGO T-Deck and M5Stack Cardputer to tablets like the M5Stack Tab5 and affordable "Cheap Yellow Display" boards.
 See [Supported Devices](supported-devices.md) for the full list.
 
-- **Easy to install**: flash Tactility with the [Web Installer](https://install.tactility.one/). No toolchain needed.
+- **Easy to install**: flash Tactility with the [Web Installer](https://install.tactilityproject.org/). No toolchain needed.
 - **Many types of input**: touchscreens, keyboards, trackballs, encoder wheels and plain buttons all work.
 - **Graphical or headless**: use the full user interface, or run without a display. You can change how the device boots and start the app you need automatically.
 

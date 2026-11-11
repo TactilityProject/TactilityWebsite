@@ -1,4 +1,12 @@
-# M5Stack PaperS3
+---
+title: "M5Stack PaperS3"
+vendor: M5Stack
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

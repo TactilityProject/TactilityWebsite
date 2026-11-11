@@ -1,4 +1,12 @@
-# LilyGO T-Embed CC1101 Plus
+---
+title: "LilyGO T-Embed CC1101 Plus"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

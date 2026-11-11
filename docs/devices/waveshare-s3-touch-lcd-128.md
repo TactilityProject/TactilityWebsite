@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 Touch LCD 1.28"
+---
+title: "Waveshare ESP32 S3 Touch LCD 1.28\""
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > The round display works, but the default Tactility launcher and apps don't support it yet.

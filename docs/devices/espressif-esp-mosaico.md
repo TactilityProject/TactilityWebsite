@@ -1,4 +1,12 @@
-# Espressif ESP-Mosaico
+---
+title: "Espressif ESP-Mosaico"
+vendor: Espressif
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: true
+---
 
 A compact ESP32-S31 board with a 2.16" 480x480 AMOLED display and 128 MB of SPI
 NAND that serves as the user-data volume.

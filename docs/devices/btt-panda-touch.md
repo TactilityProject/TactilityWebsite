@@ -1,4 +1,12 @@
-# BigTreeTech Panda Touch / K Touch
+---
+title: "BigTreeTech Panda Touch & K Touch"
+vendor: BigTreeTech
+psram: true
+sdcard: false
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

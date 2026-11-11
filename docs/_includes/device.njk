@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<div class="wrap page">
+  <article class="prose">
+    <p class="breadcrumb"><a href="/devices/">Supported devices</a> <span aria-hidden="true">/</span> {{ vendor }}</p>
+    <h1>{{ title }}{% if recommended %} <span class="star" role="img" aria-label="Recommended" title="Recommended by the developer">⭐</span>{% endif %}</h1>
+    <p class="badges">
+      {%- set device = { recommended: recommended, psram: psram, sdcard: sdcard, community: community, incubating: incubating } %}
+      {% include "badges.njk" %}
+    </p>
+    <p class="actions device-install">
+      {%- for target in installer | installTargets(page.fileSlug) %}
+      <a class="btn btn-primary" href="{{ site.installer }}#{{ target.id | urlencode }}">Install Tactility{% if target.label %} ({{ target.label }}){% endif %}</a>
+      {%- endfor %}
+    </p>
+    {{ content | safe }}
+    <p class="page-note">What the status markers and badges mean is explained on the <a href="/devices/#legend">supported devices</a> page.</p>
+  </article>
+</div>

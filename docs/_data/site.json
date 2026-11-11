@@ -1,0 +1,13 @@
+{
+  "name": "Tactility",
+  "tagline": "An operating system for ESP32 devices",
+  "description": "Tactility is an operating system for the ESP32 microcontroller family, with a launcher, apps, an App Hub and support for more than 50 devices.",
+  "url": "https://tactilityproject.org",
+  "repo": "https://github.com/TactilityProject",
+  "installer": "https://install.tactilityproject.org/",
+  "community": [
+    { "name": "Matrix", "url": "https://matrix.to/#/#tactility:matrix.org", "logo": "/images/matrix-logo.svg" },
+    { "name": "Stoat", "url": "https://stt.gg/xwRTZEpX", "logo": "/images/stoat-logo.svg" },
+    { "name": "Discord", "url": "https://discord.gg/pXs2xGS6fs" }
+  ]
+}

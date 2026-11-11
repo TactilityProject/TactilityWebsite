@@ -1,4 +1,12 @@
-# Elecrow CrowPanel Advance 3.5"
+---
+title: "Elecrow CrowPanel Advance 3.5\""
+vendor: Elecrow
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 > [!NOTE]
 > Rendering is slower than on most devices because of hardware and software limitations. A full screen refresh takes a bit less than half a second. Updates to smaller areas of the screen are much faster.

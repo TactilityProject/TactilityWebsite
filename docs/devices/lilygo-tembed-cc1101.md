@@ -1,4 +1,12 @@
-# LilyGO T-Embed CC1101
+---
+title: "LilyGO T-Embed CC1101"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!NOTE]
 > There's no separate firmware for this device yet. Flash the [CC1101 Plus](devices/lilygo-tembed-cc1101-plus.md) firmware instead.

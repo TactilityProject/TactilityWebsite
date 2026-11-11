@@ -1,4 +1,12 @@
-# M5Stack StackChan
+---
+title: "M5Stack StackChan"
+vendor: M5Stack
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

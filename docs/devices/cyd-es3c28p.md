@@ -1,4 +1,13 @@
-# CYD ES3C28P
+---
+title: "CYD ES3C28P"
+vendor: CYD
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: false
+installer: es3c28p
+---
 
 A CYD ("Cheap Yellow Display") board.
 

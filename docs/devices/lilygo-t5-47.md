@@ -1,4 +1,13 @@
-# LilyGO T5 4.7 Inch E-Paper S3
+---
+title: "LilyGO T5 4.7 Inch E-Paper S3"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: true
+installer: lilygo-t5-epd47-s3
+---
 
 > [!WARNING]
 > Only the V2 variant of the hardware is supported.

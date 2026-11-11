@@ -1,0 +1,71 @@
+---
+layout: base
+---
+{%- set parts = content.split("<!-- devices -->") %}
+<div class="wrap page page-wide">
+  <div class="prose">
+    <h1>{{ title }}</h1>
+    {{ parts[0] | safe }}
+  </div>
+
+  <form class="device-filter" id="device-filter" hidden>
+    <input type="search" id="device-search" placeholder="Search {{ collections.device.length }} devices" aria-label="Search devices" autocomplete="off">
+    <label class="chip"><input type="checkbox" data-flag="recommended"> ⭐ Recommended</label>
+    <label class="chip"><input type="checkbox" data-flag="psram"> External RAM</label>
+    <label class="chip"><input type="checkbox" data-flag="sdcard"> SD card</label>
+  </form>
+  <p class="device-empty" id="device-empty" hidden>No devices match.</p>
+
+  {%- for group in collections.device | deviceGroups %}
+  <section class="device-group">
+    <h2>{{ group.name }} <span class="count">{{ group.devices.length }}</span></h2>
+    {%- if group.note %}<p class="group-note">{{ group.note }}</p>{% endif %}
+    <ul class="device-grid">
+      {%- for item in group.devices %}
+      {%- set device = item.data %}
+      <li class="device-card" data-name="{{ device.title | lower }}"
+          {%- if device.recommended %} data-recommended{% endif %}
+          {%- if device.psram %} data-psram{% endif %}
+          {%- if device.sdcard %} data-sdcard{% endif %}>
+        <a href="{{ item.url }}">{{ device.title }}{% if device.recommended %} <span class="star" role="img" aria-label="Recommended" title="Recommended by the developer">⭐</span>{% endif %}</a>
+        <p class="badges">{% include "badges.njk" %}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+
+  <div class="prose">
+    {{ parts[1] | safe }}
+  </div>
+</div>
+<script>
+  (function () {
+    var form = document.getElementById("device-filter");
+    var search = document.getElementById("device-search");
+    var empty = document.getElementById("device-empty");
+    var flags = [].slice.call(form.querySelectorAll("[data-flag]"));
+    var groups = [].slice.call(document.querySelectorAll(".device-group"));
+    form.hidden = false;
+    function update() {
+      var words = search.value.toLowerCase().split(/\s+/).filter(Boolean);
+      var required = flags.filter(function (f) { return f.checked; }).map(function (f) { return f.dataset.flag; });
+      var total = 0;
+      groups.forEach(function (group) {
+        var shown = 0;
+        [].forEach.call(group.querySelectorAll(".device-card"), function (card) {
+          var match = words.every(function (w) { return card.dataset.name.indexOf(w) !== -1; }) &&
+            required.every(function (flag) { return flag in card.dataset; });
+          card.hidden = !match;
+          if (match) shown++;
+        });
+        group.hidden = shown === 0;
+        total += shown;
+      });
+      empty.hidden = total !== 0;
+    }
+    form.addEventListener("input", update);
+    form.addEventListener("submit", function (event) { event.preventDefault(); });
+    update();
+  })();
+</script>

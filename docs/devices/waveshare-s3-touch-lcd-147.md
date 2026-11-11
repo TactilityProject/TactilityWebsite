@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 Touch LCD 1.47"
+---
+title: "Waveshare ESP32 S3 Touch LCD 1.47\""
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

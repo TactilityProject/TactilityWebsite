@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 Touch LCD 4.3"
+---
+title: "Waveshare ESP32 S3 Touch LCD 4.3\""
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > This page covers the [regular](https://www.waveshare.com/esp32-s3-touch-lcd-4.3.htm) variant, not the [Type B](https://www.waveshare.com/esp32-s3-touch-lcd-4.3b.htm) variant.
