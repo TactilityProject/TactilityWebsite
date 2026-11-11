@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<div class="wrap page{% if toc %} has-toc{% endif %}">
+  <article class="prose">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+  {%- if toc %}
+  <aside class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ul>
+      {%- for heading in content | headings %}
+      <li><a href="#{{ heading.id }}">{{ heading.text | safe }}</a></li>
+      {%- endfor %}
+    </ul>
+  </aside>
+  {%- endif %}
+</div>

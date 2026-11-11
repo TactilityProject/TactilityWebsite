@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 ePaper 3.97"
+---
+title: "Waveshare ESP32 S3 ePaper 3.97\""
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 An ESP32-S3 board with a 3.97" 800x480 e-paper display (8 gray shades), 16 MB flash and 8 MB PSRAM.
 

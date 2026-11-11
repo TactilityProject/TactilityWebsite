@@ -1,4 +1,12 @@
-# Elecrow CrowPanel Basic 3.5"
+---
+title: "Elecrow CrowPanel Basic 3.5\""
+vendor: Elecrow
+psram: false
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > Only hardware revision v2.2 is supported.

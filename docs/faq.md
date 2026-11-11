@@ -1,4 +1,8 @@
-# FAQ
+---
+title: "FAQ"
+description: "Frequently asked questions about Tactility, the operating system for ESP32 devices."
+toc: true
+---
 
 ## Getting started
 
@@ -7,11 +11,11 @@
 Any device marked with ⭐ on the [Supported Devices](supported-devices.md) page is a good choice, because these devices are recommended by the developer.
 The [M5Stack Tab5](devices/m5stack-tab5.md) currently performs best and has the most features.
 
-Devices with external RAM (🟩 in the Memory column) are recommended. Devices without it can run Tactility, but memory is tight.
+Devices with external RAM (marked "External RAM" in the list) are recommended. Devices without it can run Tactility, but memory is tight.
 
 ### How do I install Tactility?
 
-Use the [Web Installer](https://install.tactility.one/) in a desktop browser. Installing with the _erase_ option is recommended.
+Use the [Web Installer](https://install.tactilityproject.org/) in a desktop browser. Installing with the _erase_ option is recommended.
 See [Installing](installing.md) for alternative methods.
 
 ### My device doesn't power on. What should I do?

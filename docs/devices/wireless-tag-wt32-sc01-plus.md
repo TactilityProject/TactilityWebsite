@@ -1,4 +1,12 @@
-# Wireless Tag WT32 SC01 Plus
+---
+title: "Wireless Tag WT32 SC01 Plus"
+vendor: Wireless Tag
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

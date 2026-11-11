@@ -1,4 +1,12 @@
-# LilyGO T-Deck Pro
+---
+title: "LilyGO T-Deck Pro"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > Only hardware revision 1.0 is supported, not 1.1.

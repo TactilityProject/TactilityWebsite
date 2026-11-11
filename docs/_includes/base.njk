@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (title + " | " + site.name) if (title and title != site.name) else (site.name + ": " + site.tagline) %}
+  {%- set pageDescription = description or site.description %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#16171d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" href="/images/favicon.svg">
+  <link rel="mask-icon" href="/images/favicon-safari.svg" color="#000000">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>
+    // Links from the old site looked like /#/features or /#/devices/lilygo-tdeck
+    (function () {
+      var m = /^#\/([a-z0-9-]+(?:\/[a-z0-9-]+)?)(?:\.md)?\/?(?:\?id=([a-z0-9_-]+))?$/i.exec(location.hash);
+      if (!m) return;
+      var path = m[1] === "supported-devices" ? "devices" : m[1];
+      location.replace("/" + path + "/" + (m[2] ? "#" + m[2] : ""));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/images/favicon.svg" width="28" height="28" alt="">{{ site.name }}</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        {%- for item in nav.main %}
+        <a href="{{ item.url }}"{% if not item.external and page.url.startsWith(item.url) %} aria-current="page"{% endif %}>{{ item.label }}{% if item.external %}<span aria-hidden="true"> ↗</span>{% endif %}</a>
+        {%- endfor %}
+        <a class="nav-repo" href="{{ site.repo }}">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        {%- for item in nav.footer %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      <ul>
+        {%- for item in site.community %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var button = document.querySelector(".nav-toggle");
+      var nav = document.getElementById("site-nav");
+      button.hidden = false;
+      nav.classList.add("is-collapsible");
+      button.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        button.setAttribute("aria-expanded", open);
+      });
+    })();
+  </script>
+</body>
+</html>

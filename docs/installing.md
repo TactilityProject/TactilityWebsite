@@ -1,6 +1,9 @@
-# Installing
+---
+title: "Installing"
+description: "Install Tactility on your ESP32 device with the Web Installer, or flash a release manually."
+---
 
-You can install Tactility with the [Web Installer](https://install.tactility.one/). Installing with the _erase_ option is recommended.
+You can install Tactility with the [Web Installer](https://install.tactilityproject.org/). Installing with the _erase_ option is recommended.
 
 Note, for **T-Deck**: You might need to manually put the device in boot mode:
 1. Press the trackball and then the reset button at the same time
@@ -36,7 +39,7 @@ _Troubleshooting Linux / macOS_
 
 Flash by specifying the `COM` port:
 
-```ps
+```powershell
 flash.ps COM3
 ```
 

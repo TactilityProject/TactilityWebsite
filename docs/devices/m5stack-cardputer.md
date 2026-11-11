@@ -1,4 +1,12 @@
-# M5Stack Cardputer & Cardputer v1.1
+---
+title: "M5Stack Cardputer"
+vendor: M5Stack
+psram: false
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Hardware variants
 

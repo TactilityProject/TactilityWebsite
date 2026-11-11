@@ -1,4 +1,12 @@
-# LilyGO T-Display
+---
+title: "LilyGO T-Display"
+vendor: LilyGO
+psram: false
+sdcard: false
+recommended: false
+community: true
+incubating: false
+---
 
 A small board with 2 buttons, a screen and lots of free pins.
 

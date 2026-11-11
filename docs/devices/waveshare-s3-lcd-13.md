@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 LCD 1.3"
+---
+title: "Waveshare ESP32 S3 LCD 1.3\""
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: true
+---
 
 > [!NOTE]
 > Support for this device is incubating.

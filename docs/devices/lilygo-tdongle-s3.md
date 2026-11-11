@@ -1,4 +1,12 @@
-# LilyGO T-Dongle S3
+---
+title: "LilyGO T-Dongle S3"
+vendor: LilyGO
+psram: false
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!NOTE]
 > Support for this device is incubating. It runs Tactility and has a single button for navigation, but there's currently no easy way to install apps.

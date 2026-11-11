@@ -1,4 +1,12 @@
-# Elecrow CrowPanel Advance 2.8"
+---
+title: "Elecrow CrowPanel Advance 2.8\""
+vendor: Elecrow
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

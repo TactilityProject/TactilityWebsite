@@ -1,4 +1,12 @@
-# Heltec WiFi LoRa 32 v3
+---
+title: "Heltec WiFi LoRa 32 v3"
+vendor: Heltec
+psram: false
+sdcard: false
+recommended: false
+community: false
+incubating: true
+---
 
 > [!NOTE]
 > Support for this device is incubating.

@@ -1,4 +1,12 @@
-# LilyGO T-HMI
+---
+title: "LilyGO T-HMI"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

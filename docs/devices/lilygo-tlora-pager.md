@@ -1,4 +1,12 @@
-# LilyGO T-Lora Pager
+---
+title: "LilyGO T-Lora Pager"
+vendor: LilyGO
+psram: true
+sdcard: true
+recommended: true
+community: false
+incubating: false
+---
 
 ## Feature support
 

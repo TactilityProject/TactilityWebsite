@@ -1,4 +1,7 @@
-# Support
+---
+title: "Support"
+description: "Report bugs, suggest features and join the Tactility community."
+---
 
 Bugs and suggestions can be report via [GitHub](https://github.com/TactilityProject/Tactility/issues).
 

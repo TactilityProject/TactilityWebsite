@@ -1,4 +1,12 @@
-# M5Stack CoreS3
+---
+title: "M5Stack CoreS3"
+vendor: M5Stack
+psram: true
+sdcard: false
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

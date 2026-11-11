@@ -1,4 +1,12 @@
-# Elecrow CrowPanel Basic 2.8"
+---
+title: "Elecrow CrowPanel Basic 2.8\""
+vendor: Elecrow
+psram: false
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

@@ -1,4 +1,12 @@
-# M5Stack StickS3
+---
+title: "M5Stack StickS3"
+vendor: M5Stack
+psram: true
+sdcard: false
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

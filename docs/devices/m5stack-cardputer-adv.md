@@ -1,4 +1,12 @@
-# M5Stack Cardputer Adv
+---
+title: "M5Stack Cardputer Adv"
+vendor: M5Stack
+psram: false
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

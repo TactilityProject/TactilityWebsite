@@ -1,4 +1,12 @@
-# Guition JC8048W550C
+---
+title: "Guition JC8048W550C"
+vendor: Guition
+psram: true
+sdcard: true
+recommended: false
+community: false
+incubating: false
+---
 
 > [!WARNING]
 > The device does not power on with a USB-C to USB-C cable. Use a USB-C to USB-A cable instead.

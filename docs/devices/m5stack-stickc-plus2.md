@@ -1,4 +1,12 @@
-# M5Stack StickC Plus2
+---
+title: "M5Stack StickC Plus2"
+vendor: M5Stack
+psram: true
+sdcard: false
+recommended: false
+community: false
+incubating: false
+---
 
 ## Feature support
 

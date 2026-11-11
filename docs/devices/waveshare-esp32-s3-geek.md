@@ -1,4 +1,12 @@
-# Waveshare ESP32 S3 GEEK
+---
+title: "Waveshare ESP32 S3 GEEK"
+vendor: Waveshare
+psram: true
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 ## Feature support
 

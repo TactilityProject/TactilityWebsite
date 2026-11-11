@@ -1,4 +1,12 @@
-# Guition JC2432W328C
+---
+title: "Guition JC2432W328C"
+vendor: Guition
+psram: false
+sdcard: true
+recommended: false
+community: true
+incubating: false
+---
 
 > [!WARNING]
 > The device does not power on with a USB-C to USB-C cable. Use a USB-C to USB-A cable instead.
