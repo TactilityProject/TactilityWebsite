@@ -3,7 +3,7 @@ title: "Espressif ESP-Mosaico"
 vendor: Espressif
 psram: true
 sdcard: true
-recommended: true
+recommended: false
 community: false
 incubating: true
 ---
