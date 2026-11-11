@@ -35,7 +35,7 @@ Install more apps straight from the device with the App Hub. Examples include a 
 - **Wi-Fi**: connect to a network.
 - **Bluetooth**: Bluetooth Low Energy on supported devices.
 - **Mesh networking**: join [Meshtastic](https://meshtastic.org) and [MeshCore](https://meshcore.co.uk) networks on devices with a LoRa radio or via ESP-NOW.
-- **Web dashboard**: manage your device from a browser. Upload and download files, install and run apps, take screenshots and view system information.
+- **Web dashboard**: manage your device from a browser. Upload and download files, install and run apps, and view system information.
 - **USB**: use the device as a USB drive to copy files from your computer. Some devices can also act as a USB host for keyboards, storage and MIDI devices.
 
 ## Build your own apps

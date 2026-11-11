@@ -1,3 +1,4 @@
 [
-  { "from": "/devices/cyd-2432s028rv3/", "to": "/devices/cyd-2432s028r/" }
+  { "from": "/devices/cyd-2432s028rv3/", "to": "/devices/cyd-2432s028r/" },
+  { "from": "/support/", "to": "/community/" }
 ]

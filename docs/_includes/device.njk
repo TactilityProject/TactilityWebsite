@@ -9,9 +9,18 @@ layout: base
       {%- set device = { recommended: recommended, psram: psram, sdcard: sdcard, community: community, incubating: incubating } %}
       {% include "badges.njk" %}
     </p>
+    {%- set targets = installer | installTargets(page.fileSlug) %}
+    {%- if targets.length > 1 %}
+    <p class="install-label">Install Tactility: choose your hardware revision</p>
+    {%- endif %}
     <p class="actions device-install">
-      {%- for target in installer | installTargets(page.fileSlug) %}
-      <a class="btn btn-primary" href="{{ site.installer }}#{{ target.id | urlencode }}">Install Tactility{% if target.label %} ({{ target.label }}){% endif %}</a>
+      {%- for target in targets %}
+      {%- set text = ("Hardware " + target.label) if targets.length > 1 else "Install Tactility" %}
+      {%- if target.supported === false %}
+      <span class="btn btn-disabled" aria-disabled="true">{{ text }}<br><small>(not supported)</small></span>
+      {%- else %}
+      <a class="btn btn-primary" href="{{ site.installer }}#{{ target.id | urlencode }}">{{ text }}</a>
+      {%- endif %}
       {%- endfor %}
     </p>
     {{ content | safe }}

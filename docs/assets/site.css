@@ -217,13 +217,11 @@ h1 .star { font-size: 0.9rem; padding-inline: 0.6rem; }
 .home-body { margin-top: 3.5rem; text-align: center; font-size: 1.1rem; }
 .home-body.prose { max-width: var(--wrap); }
 
-.community, .supporters { margin-top: 4rem; text-align: center; }
-.community h2, .supporters h2 { margin: 0 0 1.5rem; color: var(--muted); font: 500 0.8rem var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
-.community-links, .supporters p { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.5rem 3rem; margin: 0; }
-.community-links a { display: inline-flex; align-items: center; color: var(--heading); font-weight: 600; font-size: 1.2rem; opacity: 0.85; }
-.community-links img { height: 36px; width: auto; }
+.supporters { margin-top: 4rem; text-align: center; }
+.supporters h2 { margin: 0 0 1.5rem; color: var(--muted); font: 500 0.8rem var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
+.supporters p { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.5rem 3rem; margin: 0; }
 .supporters img { height: 44px; width: auto; }
-.community-links a:hover, .supporters a:hover { opacity: 1; }
+.supporters a:hover { opacity: 1; }
 .supporters a { opacity: 0.8; transition: opacity 0.15s; }
 
 /* Pages */
@@ -245,9 +243,13 @@ h1 .star { font-size: 0.9rem; padding-inline: 0.6rem; }
 
 .breadcrumb { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.9rem; }
 .prose > .badges { margin: -0.5rem 0 1.5rem; }
+.install-label { margin: 0 0 0.6rem; color: var(--heading); font-weight: 600; }
 .device-install { margin: 0 0 2rem; }
 .device-install:empty { display: none; }
 .device-install .btn { text-decoration: none; }
+.device-install .btn { display: inline-flex; flex-direction: column; justify-content: center; text-align: center; line-height: 1.3; }
+.btn-disabled, .btn-disabled:hover { border-color: var(--border); background: var(--surface); color: var(--muted); cursor: not-allowed; }
+.btn-disabled small { font-size: 0.8rem; font-weight: 400; }
 .page-note { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
 
 .prose h2 { margin: 2.75rem 0 0.9rem; font-size: 1.6rem; }
@@ -261,6 +263,10 @@ h1 .star { font-size: 0.9rem; padding-inline: 0.6rem; }
 .prose li::marker { color: var(--muted); }
 .prose strong { color: var(--heading); font-weight: 600; }
 .prose p a, .prose li a, .prose td a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); text-underline-offset: 3px; }
+/* A paragraph of linked images is shown as a row of logos */
+.prose p:has(> a > img) { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 3rem; margin-block: 1.75rem; }
+.prose p > a > img { display: block; width: auto; height: 44px; opacity: 0.9; }
+.prose p > a:hover > img { opacity: 1; }
 .prose hr { border: 0; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .prose blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--border); color: var(--muted); }
 
@@ -274,9 +280,14 @@ h1 .star { font-size: 0.9rem; padding-inline: 0.6rem; }
 .token.operator, .token.punctuation { color: var(--muted); }
 
 .prose table { display: block; width: max-content; max-width: 100%; margin: 1.25rem 0; overflow-x: auto; border-collapse: collapse; font-size: 0.95rem; }
+@media (max-width: 480px) { .prose th, .prose td { padding-inline: 0.55rem !important; } }
 .prose th, .prose td { padding: 0.5rem 0.9rem; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
 .prose th { color: var(--muted); font: 500 0.75rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
 .prose tr:last-child td { border-bottom: 0; }
+/* Links to the Web Installer inside a table are shown as small buttons */
+.prose td a[href^="https://install.tactilityproject.org/#"] { display: inline-block; padding: 0.25rem 0.8rem; border-radius: 6px; background: var(--blue); color: #06141c; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.prose td a[href^="https://install.tactilityproject.org/#"]:hover { background: #6acdff; }
+.prose td { vertical-align: middle; }
 
 .markdown-alert { margin: 1.5rem 0; padding: 0.9rem 1.1rem; border: 1px solid color-mix(in srgb, var(--alert) 40%, transparent); border-left-width: 3px; border-left-color: var(--alert); border-radius: var(--radius); background: color-mix(in srgb, var(--alert) 8%, transparent); --alert: var(--blue); }
 .markdown-alert > :last-child { margin-bottom: 0; }

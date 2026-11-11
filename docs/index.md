@@ -35,7 +35,7 @@ screenshots:
     caption: Mesh
 highlights:
   - title: Runs on 50+ devices
-    text: Handhelds with keyboards, tablets, e-paper and affordable "Cheap Yellow Display" boards.
+    text: Handhelds, tablets and e-paper, with touch or just buttons and an encoder. Or build your own device setup.
     url: supported-devices.md
   - title: Apps included
     text: Files, Terminal, Mesh, Notes, Camera and more. Install extra apps on the device from the App Hub.
@@ -63,6 +63,3 @@ supporters:
     logo: /images/supporter/unPhone.svg
     url: https://unphone.net
 ---
-
-Use one of the [supported devices](supported-devices.md),
-or set up the drivers for your own hardware combination.

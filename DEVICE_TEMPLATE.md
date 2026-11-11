@@ -12,7 +12,7 @@ Copy the block below into `docs/devices/<vendor>-<model>.md` and remove the sect
   - `recommended`: `true` for devices recommended by the developer (⭐)
   - `community`: `true` when the developer does not own the board
   - `incubating`: `true` while support is still being worked on
-  - `installer` (optional): the device id in the [Web Installer](https://install.tactilityproject.org/), used for the "Install Tactility" button. Leave it out when the id equals the file name. Use a list of `id` / `label` pairs when there are several firmware builds (see `docs/devices/cl32.md`), or `false` to hide the button.
+  - `installer` (optional): the device id in the [Web Installer](https://install.tactilityproject.org/), used for the "Install Tactility" button. Leave it out when the id equals the file name. Use a list of `id` / `label` pairs when hardware revisions need different firmware; the label is the hardware revision (e.g. `v1`) and is shown as "Hardware v1" (see `docs/devices/cl32.md`), or `false` to hide the button. An entry with `supported: false` and no `id` shows a disabled button marked "(not supported)". Install links can also go in a table on the page, where they are shown as buttons (see `docs/devices/cyd-2432s028r.md`).
 - Status legend (also shown on `supported-devices.md`):
   - ✅ Supported
   - ⚠️ Partially supported or buggy (explain in Notes)

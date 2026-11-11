@@ -54,7 +54,7 @@ Please report the problem on [GitHub](https://github.com/TactilityProject/Tactil
 ### Where can I get help?
 
 Join the community on [Matrix](https://matrix.to/#/#tactility:matrix.org), [Stoat.chat](https://stt.gg/xwRTZEpX) or [Discord](https://discord.gg/pXs2xGS6fs).
-See [Support](support.md) for more.
+See [Community](community.md) for more.
 
 ## About the project
 

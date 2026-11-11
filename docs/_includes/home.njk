@@ -67,20 +67,11 @@ layout: base
   {%- endfor %}
 </section>
 
+{%- if content | trim %}
 <section class="wrap home-body prose">
   {{ content | safe }}
 </section>
-
-<section class="wrap community">
-  <h2>Join the community</h2>
-  <p class="community-links">
-    {%- for item in site.community %}
-    <a href="{{ item.url }}">
-      {%- if item.logo %}<img src="{{ item.logo }}" alt="{{ item.name }}" height="36">{% else %}{{ item.name }}{% endif -%}
-    </a>
-    {%- endfor %}
-  </p>
-</section>
+{%- endif %}
 
 <section class="wrap supporters">
   <h2>Supported by</h2>

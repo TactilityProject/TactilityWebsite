@@ -4,7 +4,7 @@
     { "label": "Install", "url": "/installing/" },
     { "label": "Devices", "url": "/devices/" },
     { "label": "FAQ", "url": "/faq/" },
-    { "label": "Support", "url": "/support/" },
+    { "label": "Community", "url": "/community/" },
     { "label": "Docs", "url": "https://docs.tactilityproject.org", "external": true }
   ],
   "footer": [
