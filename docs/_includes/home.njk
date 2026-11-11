@@ -44,10 +44,14 @@ layout: base
       buttons[0].disabled = track.scrollLeft <= 1;
       buttons[1].disabled = track.scrollLeft >= max - 1;
     }
+    function stepWidth() {
+      var item = track.querySelector(".bezel");
+      return item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || 0);
+    }
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
-        var item = track.querySelector(".bezel");
-        var step = item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || 0);
+        stopAuto();
+        var step = stepWidth();
         var count = Math.max(1, Math.floor(track.clientWidth / step));
         track.scrollBy({ left: button.dataset.dir * step * count, behavior: "smooth" });
       });
@@ -55,6 +59,59 @@ layout: base
     track.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
     update();
+
+    // Advance one screenshot at a time until the visitor takes over
+    var timer = null;
+    var frame = null;
+    // Own animation instead of native smooth scrolling, so the slide can be slow and eased.
+    // Scroll snapping is switched off while it runs, or it would fight every frame.
+    function slideTo(target, duration) {
+      cancelSlide();
+      var from = track.scrollLeft;
+      var began = null;
+      track.style.scrollSnapType = "none";
+      function tick(now) {
+        if (began === null) began = now;
+        var p = Math.min(1, (now - began) / duration);
+        var eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+        track.scrollLeft = from + (target - from) * eased;
+        if (p < 1) {
+          frame = requestAnimationFrame(tick);
+        } else {
+          frame = null;
+          track.style.scrollSnapType = "";
+        }
+      }
+      frame = requestAnimationFrame(tick);
+    }
+    function cancelSlide() {
+      if (frame === null) return;
+      cancelAnimationFrame(frame);
+      frame = null;
+      track.style.scrollSnapType = "";
+    }
+    function stopAuto() {
+      cancelSlide();
+      if (timer === null) return;
+      clearInterval(timer);
+      timer = null;
+    }
+    function advance() {
+      if (document.hidden) return;
+      var max = track.scrollWidth - track.clientWidth;
+      if (max <= 1) return;
+      if (track.scrollLeft >= max - 1) {
+        slideTo(0, 1800);
+      } else {
+        slideTo(Math.min(max, track.scrollLeft + stepWidth()), 1200);
+      }
+    }
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      timer = setInterval(advance, 5000);
+      ["pointerdown", "touchstart", "wheel", "keydown"].forEach(function (name) {
+        track.addEventListener(name, stopAuto, { passive: true });
+      });
+    }
   })();
 </script>
 
