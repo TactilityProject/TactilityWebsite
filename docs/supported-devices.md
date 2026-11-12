@@ -12,7 +12,7 @@ Some hardware combinations are officially supported.
 
 ## Legend
 
-- **⭐** after the name: recommended by the developer.
+- **⭐**: recommended by the developer.
 - **External RAM**: the device has external RAM (PSRAM). Devices without it can run Tactility, but memory is tight.
 - **SD card**: the SD card slot works. "No SD card" means it is unavailable, broken or not implemented.
 - **Community tested**: these boards are not owned by the developer, so quality control is limited to community efforts.

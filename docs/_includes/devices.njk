@@ -27,7 +27,7 @@ layout: base
           {%- if device.recommended %} data-recommended{% endif %}
           {%- if device.psram %} data-psram{% endif %}
           {%- if device.sdcard %} data-sdcard{% endif %}>
-        <a href="{{ item.url }}">{{ device.title }}{% if device.recommended %} <span class="star" role="img" aria-label="Recommended" title="Recommended by the developer">⭐</span>{% endif %}</a>
+        <a href="{{ item.url }}">{{ device.title }}</a>
         <p class="badges">{% include "badges.njk" %}</p>
       </li>
       {%- endfor %}

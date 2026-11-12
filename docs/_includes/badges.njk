@@ -1,3 +1,4 @@
+{%- if device.recommended %}<span class="star" role="img" aria-label="Recommended" title="Recommended by the developer">⭐</span>{% endif %}
 {%- if device.psram %}<span class="badge badge-yes">External RAM</span>{% else %}<span class="badge badge-warn">No external RAM</span>{% endif %}
 {%- if device.sdcard %}<span class="badge badge-yes">SD card</span>{% else %}<span class="badge badge-no">No SD card</span>{% endif %}
 {%- if device.community %}<span class="badge">Community tested</span>{% endif %}
