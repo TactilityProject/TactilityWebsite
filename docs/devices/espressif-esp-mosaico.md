@@ -5,7 +5,7 @@ psram: true
 sdcard: true
 recommended: false
 community: false
-incubating: true
+incubating: false
 ---
 
 A compact ESP32-S31 board with a 2.16" 480x480 AMOLED display and 128 MB of SPI
