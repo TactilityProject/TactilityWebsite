@@ -13,6 +13,9 @@ actions:
   - label: Supported devices
     url: supported-devices.md
 screenshots:
+  - src: /images/screenshot-Maps.png
+    alt: Screenshot of the maps app
+    caption: Maps
   - src: /images/screenshot-Launcher.png
     alt: Screenshot of the launcher app
   - src: /images/screenshot-AppHub.png
