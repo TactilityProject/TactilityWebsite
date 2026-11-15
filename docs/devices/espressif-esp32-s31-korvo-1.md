@@ -5,7 +5,7 @@ psram: true
 sdcard: true
 recommended: false
 community: false
-incubating: true
+incubating: false
 ---
 
 An ESP32-S31 multimedia development board with a 4.3" 800x480 touch display on the
