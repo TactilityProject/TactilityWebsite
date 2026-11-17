@@ -3,7 +3,7 @@ title: "Espressif ESP32-S31-Korvo-1"
 vendor: Espressif
 psram: true
 sdcard: true
-recommended: false
+recommended: true
 community: false
 incubating: false
 ---
