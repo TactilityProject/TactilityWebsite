@@ -2,7 +2,7 @@
 title: "M5Stack CoreS3"
 vendor: M5Stack
 psram: true
-sdcard: false
+sdcard: true
 recommended: false
 community: false
 incubating: false
@@ -12,6 +12,7 @@ incubating: false
 
 | Feature | Status | Notes |
 |-|-|-|
+| SD card | ✅ | |
 | Power status | ✅ | `AXP2101` |
 | IMU | ✅ | `BMI270` |
 | Real-time clock | ✅ | `BM8563` |
@@ -22,14 +23,8 @@ incubating: false
 | Bluetooth | ✅ | BLE |
 | Touch | ✅ | `FT5x06` |
 | Backlight control | ✅ | Via the `AXP2101` |
-| USB Mass Storage | ⚠️ | Depends on the SD card |
-| External I2C | ⚠️ | The connector is not powered |
-| SD card | ❌ | Hardware design issue (see Known issues) |
-
-## Known issues
-
-- SD card: not supported. This appears to be a hardware design error: the display and SD card share the SPI bus, and the display uses `MISO` as its `DC` output pin, while the SD card needs `MISO` as an input. ([ESP-BSP notes](https://github.com/espressif/esp-bsp/blob/63b99593b7ead04336c0f22e7bc880167d9bfdb6/bsp/m5stack_core_s3/README.md), [forum post](https://community.m5stack.com/post/21397), [forum thread](https://community.m5stack.com/topic/5415/core-s3-sd-tf-card-issues/2))
-- External I2C: the connector does not get power, so external I2C devices don't work.
+| USB Mass Storage | ✅ | |
+| External I2C | ✅ | |
 
 ## Links
 
