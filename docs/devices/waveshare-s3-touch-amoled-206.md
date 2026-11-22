@@ -20,8 +20,8 @@ A 2.06" AMOLED touchscreen board with an `ESP32-S3`, an IMU, a real-time clock, 
 | IMU | ✅ | `QMI8658`, used for auto-rotate |
 | Real-time clock | ✅ | `BM8563` |
 | Power status | ✅ | `AXP2101` |
-| Speaker | ✅ | `ES8311` |
-| Microphone | ✅ | `ES7210` |
+| Speaker | 🚧 | `ES8311` - Speaker output not working |
+| Microphone | 🚧 | `ES7210` - Not verified because speaker output isn't working |
 | USB Mass Storage | ✅ | |
 | Bluetooth | ✅ | BLE |
 
