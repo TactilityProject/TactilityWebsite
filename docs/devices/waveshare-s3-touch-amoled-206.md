@@ -5,7 +5,7 @@ psram: true
 sdcard: true
 recommended: false
 community: false
-incubating: true
+incubating: false
 ---
 
 A 2.06" AMOLED touchscreen board with an `ESP32-S3`, an IMU, a real-time clock, a speaker and a microphone.
