@@ -27,7 +27,7 @@ incubating: false
 | Keyboard backlight | ✅ | Off by default |
 | Gyro | 🚧 | Bosch `BHI260AP` |
 | Real-time clock | 🚧 | NXP `PCF85063A` |
-| Audio codec | 🚧 | Everest Semi `ES8311` |
+| Audio codec | ✅ | Everest Semi `ES8311` |
 
 ## Links
 
