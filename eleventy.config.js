@@ -1,5 +1,6 @@
 import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import markdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
@@ -97,6 +98,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("localizedDevices", (api) =>
     api.getFilteredByTag("device").flatMap((device) => localeCodes.map((lang) => ({ lang, device }))),
   );
+
+  // URL of a file in docs/ with a hash of its content, so browsers fetch it
+  // again after it changes instead of using a stale cached copy
+  eleventyConfig.addFilter("versioned", (src) => {
+    const hash = crypto.createHash("sha256").update(fs.readFileSync(`docs${src}`)).digest("hex").slice(0, 10);
+    return `${src}?v=${hash}`;
+  });
 
   eleventyConfig.addPassthroughCopy("docs/images");
   eleventyConfig.addPassthroughCopy("docs/assets");
