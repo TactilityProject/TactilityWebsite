@@ -5,7 +5,8 @@
     { "code": "de", "name": "Deutsch", "hreflang": "de", "ogLocale": "de_DE" },
     { "code": "es", "name": "Español", "hreflang": "es", "ogLocale": "es_ES" },
     { "code": "ja", "name": "日本語", "hreflang": "ja", "ogLocale": "ja_JP" },
-    { "code": "zh", "name": "简体中文", "hreflang": "zh-CN", "ogLocale": "zh_CN" }
+    { "code": "zh", "name": "简体中文", "hreflang": "zh-CN", "ogLocale": "zh_CN" },
+    { "code": "zh-tw", "name": "繁體中文", "hreflang": "zh-TW", "ogLocale": "zh_TW" }
   ],
   "strings": {
     "en": {
@@ -261,6 +262,57 @@
         "legendNote": "状态标记和标签的含义请参见<a href=\"{url}\">支持的设备</a>页面。",
         "description": "{title} 上的 Tactility：支持的功能、已知问题和链接。",
         "englishOnly": "设备详情目前仅提供英文版。"
+      }
+    },
+    "zh-tw": {
+      "tagline": "專為 ESP32 裝置打造的作業系統",
+      "description": "Tactility 是專為 ESP32 微控制器系列打造的作業系統，提供啟動器、App 和 App Hub，支援 50 多款裝置。",
+      "skip": "跳到主要內容",
+      "menu": "選單",
+      "language": "語言",
+      "nav": {
+        "features": "功能",
+        "install": "安裝",
+        "devices": "裝置",
+        "useCases": "應用情境",
+        "community": "社群",
+        "docs": "文件",
+        "licenses": "授權與著作權",
+        "devDocs": "開發者文件"
+      },
+      "onThisPage": "本頁內容",
+      "screenshots": "螢幕截圖",
+      "previousScreenshots": "上一組截圖",
+      "nextScreenshots": "下一組截圖",
+      "youtube": "觀看示範",
+      "supportedBy": "贊助夥伴",
+      "badges": {
+        "recommended": "推薦",
+        "recommendedTitle": "開發者推薦",
+        "externalRam": "外部 RAM",
+        "noExternalRam": "無外部 RAM",
+        "sdCard": "SD 卡",
+        "noSdCard": "無 SD 卡",
+        "communityTested": "社群測試",
+        "incubating": "開發中"
+      },
+      "devices": {
+        "search": "搜尋 {count} 款裝置",
+        "searchLabel": "搜尋裝置",
+        "noMatch": "沒有符合的裝置。",
+        "other": "其他",
+        "incubating": "開發中",
+        "incubatingNote": "仍在開發中：部分功能尚未完成，可能有問題。"
+      },
+      "device": {
+        "breadcrumb": "支援的裝置",
+        "chooseRevision": "安裝 Tactility：請選擇你的硬體版本",
+        "hardware": "硬體 {label}",
+        "install": "安裝 Tactility",
+        "notSupported": "（不支援）",
+        "legendNote": "狀態標記和標籤的意思請參閱<a href=\"{url}\">支援的裝置</a>頁面。",
+        "description": "{title} 上的 Tactility：支援的功能、已知問題和連結。",
+        "englishOnly": "裝置詳細資訊目前僅提供英文版。"
       }
     }
   }

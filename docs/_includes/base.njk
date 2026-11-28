@@ -56,7 +56,10 @@
       }
       var preferred = navigator.languages || [navigator.language || ""];
       for (var i = 0; i < preferred.length; i++) {
-        var code = String(preferred[i]).toLowerCase().split("-")[0];
+        var tag = String(preferred[i]).toLowerCase();
+        var code = tag.split("-")[0];
+        // Traditional Chinese (Taiwan, Hong Kong, Macau) has its own pages
+        if (/^zh-(hant|tw|hk|mo)(-|$)/.test(tag)) code = "zh-tw";
         if (code === "{{ i18n.defaultLanguage }}") return;
         if (available.indexOf(code) !== -1) {
           location.replace("/" + code + location.pathname + location.search + location.hash);

@@ -30,7 +30,7 @@ npm run build
 
 ## Translations
 
-The site is available in English (at the root), German (`/de/`), Spanish (`/es/`), Japanese (`/ja/`) and Simplified Chinese (`/zh/`).
+The site is available in English (at the root), German (`/de/`), Spanish (`/es/`), Japanese (`/ja/`), Simplified Chinese (`/zh/`) and Traditional Chinese (`/zh-tw/`).
 
 - `docs/<language>/*.md`: the translated pages, with the same file names as the English ones. A folder's `<language>.11tydata.json` sets the page language.
 - `docs/_data/i18n.json`: the list of languages and the texts of the layouts (navigation, badges, buttons) in every language.
