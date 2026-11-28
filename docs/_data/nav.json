@@ -3,7 +3,7 @@
     { "label": "Features", "url": "/features/" },
     { "label": "Install", "url": "/installing/" },
     { "label": "Devices", "url": "/devices/" },
-    { "label": "FAQ", "url": "/faq/" },
+    { "label": "Use Cases", "url": "/use-cases/" },
     { "label": "Community", "url": "/community/" },
     { "label": "Docs", "url": "https://docs.tactilityproject.org", "external": true }
   ],

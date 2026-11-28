@@ -9,7 +9,7 @@ import container from "markdown-it-container";
 const fonts = "node_modules/@fontsource-variable";
 
 export default function (eleventyConfig) {
-  // Lets markdown link to other pages by file name, e.g. [FAQ](faq.md)
+  // Lets markdown link to other pages by file name, e.g. [Features](features.md)
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
 
