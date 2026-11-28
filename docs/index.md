@@ -36,6 +36,12 @@ screenshots:
   - src: /images/screenshot-Mesh.png
     alt: Screenshot of a channel in the mesh chat app
     caption: Mesh
+  - src: /images/screenshot-SystemInfo.png
+    alt: Screenshot of the Tasks tab in the Systeme Info app
+    caption: System Info
+  - src: /images/screenshot-GPIO.png
+    alt: Screenshot of the GPIO app showing a view like a logic analyzer
+    caption: GPIO
 highlights:
   - title: Runs on 50+ devices
     text: Handhelds, tablets and e-paper, with touch or just buttons and an encoder. Or build your own device setup.
