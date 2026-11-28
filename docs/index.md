@@ -43,7 +43,7 @@ screenshots:
     alt: Screenshot of the GPIO app showing a view like a logic analyzer
     caption: GPIO
 highlights:
-  - title: Runs on 50+ devices
+  - title: Runs on many devices
     text: Handhelds, tablets and e-paper, with touch or just buttons and an encoder. Or build your own device setup.
     url: supported-devices.md
   - title: Apps included

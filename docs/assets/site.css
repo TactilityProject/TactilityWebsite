@@ -83,6 +83,16 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); font-weight: 700; margin: 0 
 .site-header nav a:hover { color: var(--heading); background: var(--surface-2); }
 .site-header nav a[aria-current] { color: var(--blue); }
 .site-header nav .nav-repo { margin-left: 0.5rem; border: 1px solid var(--border); }
+/* Language menu: after the navigation on wide screens, next to the menu button on small ones */
+.lang-menu { position: relative; order: 3; font-size: 0.9rem; }
+.lang-menu summary { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.6rem; border-radius: 6px; color: var(--text); font: 500 0.8rem var(--mono); cursor: pointer; list-style: none; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { color: var(--heading); background: var(--surface-2); }
+.lang-menu ul { position: absolute; right: 0; top: calc(100% + 0.4rem); min-width: 9rem; margin: 0; padding: 0.35rem; list-style: none; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.35); }
+.lang-menu a { display: block; padding: 0.35rem 0.65rem; border-radius: 5px; color: var(--text); }
+.lang-menu a:hover { color: var(--heading); background: var(--surface-2); }
+.lang-menu a[aria-current] { color: var(--blue); }
+.translation-note { margin: 0 0 1.5rem; padding: 0.6rem 0.9rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
 .nav-toggle { display: none; padding: 0.4rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; background: none; color: var(--text); font: inherit; font-size: 0.9rem; cursor: pointer; }
 
 @media (max-width: 760px) {
@@ -90,6 +100,8 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); font-weight: 700; margin: 0 
   .site-header nav.is-collapsible { display: none; }
   .site-header nav.is-collapsible.is-open { display: flex; flex-direction: column; align-items: stretch; width: 100%; padding-bottom: 0.75rem; }
   .site-header nav .nav-repo { margin-left: 0; }
+  .lang-menu { order: 0; }
+  .site-header nav { order: 4; }
 }
 
 /* Footer */
@@ -197,7 +209,8 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); font-weight: 700; margin: 0 
 .shots-nav button { width: 2.5rem; height: 2.5rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--heading); font: inherit; cursor: pointer; }
 .shots-nav button:hover:not(:disabled) { border-color: var(--blue); }
 .shots-nav button:disabled { opacity: 0.35; cursor: default; }
-.shots-more { margin: 1.25rem 0 0; text-align: center; }
+.shots-more { display: flex; justify-content: center; margin: 1.5rem 0 0; }
+.shots-more .logo-tile { min-width: 240px; }
 
 .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin-top: 4rem; }
 .card {
@@ -263,9 +276,38 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); font-weight: 700; margin: 0 
 .prose strong { color: var(--heading); font-weight: 600; }
 .prose p a, .prose li a, .prose td a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); text-underline-offset: 3px; }
 /* A paragraph of linked images is shown as a row of logos */
-.prose p:has(> a > img) { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 3rem; margin-block: 1.75rem; }
-.prose p > a > img { display: block; width: auto; height: 44px; opacity: 0.9; }
-.prose p > a:hover > img { opacity: 1; }
+/* Logo tiles: a paragraph of linked images in a page, and the YouTube link on the home page */
+.prose p:has(> a > img) { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 1rem; margin-block: 1.75rem; }
+.prose p > a:has(> img), .logo-tile {
+  --glow: var(--blue);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;
+  min-height: 104px; padding: 1rem 1.5rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--glow) 12%, transparent), transparent 70%), var(--surface);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 6px 18px rgb(0 0 0 / 0.25);
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.prose p > a[href*="discord"]:has(> img) { --glow: #5865f2; }
+.prose p > a[href*="reddit"]:has(> img) { --glow: #ff4500; }
+.prose p > a[href*="youtube"]:has(> img), .logo-tile[href*="youtube"] { --glow: #ff0000; }
+.prose p > a:has(> img):hover, .prose p > a:has(> img):focus-visible, .logo-tile:hover, .logo-tile:focus-visible {
+  border-color: color-mix(in srgb, var(--glow) 70%, var(--border));
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.06) inset, 0 10px 28px rgb(0 0 0 / 0.35), 0 0 24px color-mix(in srgb, var(--glow) 30%, transparent);
+  transform: translateY(-2px);
+}
+.prose p > a > img, .logo-tile img { display: block; width: auto; max-width: 100%; height: 34px; }
+/* The Matrix logo has empty space around it in its file */
+.prose p > a > img[src*="matrix"] { height: 46px; }
+/* The Discord logo has no space around it at all */
+.prose p > a > img[src*="discord"] { height: 28px; }
+.logo-tile-label { color: var(--muted); font: 500 0.75rem var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.logo-tile:hover .logo-tile-label { color: var(--text); }
+@media (prefers-reduced-motion: reduce) {
+  .prose p > a:has(> img), .logo-tile { transition: none; }
+  .prose p > a:has(> img):hover, .logo-tile:hover { transform: none; }
+}
+
 .prose hr { border: 0; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .prose blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--border); color: var(--muted); }
 

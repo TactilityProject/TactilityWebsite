@@ -7,6 +7,27 @@ import alerts from "markdown-it-github-alerts";
 import container from "markdown-it-container";
 
 const fonts = "node_modules/@fontsource-variable";
+const i18n = JSON.parse(fs.readFileSync("docs/_data/i18n.json", "utf8"));
+const localeCodes = i18n.languages.map((l) => l.code).filter((code) => code !== i18n.defaultLanguage);
+const localePrefix = new RegExp(`^/(${localeCodes.join("|")})(?=/|$)`);
+
+// `## Heading {#id}` sets the heading's id, so translated pages keep the
+// English anchors (links like features.md#connectivity work in every language).
+function headingIds(md) {
+  md.core.ruler.push("heading_ids", (state) => {
+    const tokens = state.tokens;
+    for (let i = 0; i < tokens.length; i++) {
+      if (tokens[i].type !== "heading_open") continue;
+      const inline = tokens[i + 1];
+      const match = /\s*\{#([\w-]+)\}\s*$/.exec(inline.content);
+      if (!match) continue;
+      tokens[i].attrSet("id", match[1]);
+      inline.content = inline.content.slice(0, match.index);
+      const last = inline.children[inline.children.length - 1];
+      if (last && last.type === "text") last.content = last.content.replace(/\s*\{#[\w-]+\}\s*$/, "");
+    }
+  });
+}
 
 export default function (eleventyConfig) {
   // Lets markdown link to other pages by file name, e.g. [Features](features.md)
@@ -29,6 +50,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary(
     "md",
     markdownIt({ html: true, linkify: true })
+      .use(headingIds)
       .use(anchor, { permalink: anchor.permalink.headerLink({ safariReaderFix: true }) })
       .use(alerts)
       .use(container, "tabs", {
@@ -54,6 +76,27 @@ export default function (eleventyConfig) {
   );
 
   eleventyConfig.addGlobalData("layout", "page");
+
+  // Languages: English lives at the root, the others in docs/<code>/ (whose
+  // directory data sets `lang`). UI strings are in docs/_data/i18n.json.
+  eleventyConfig.addGlobalData("lang", i18n.defaultLanguage);
+  eleventyConfig.addGlobalData("translatedLanguages", localeCodes);
+
+  // Site URL in another language: "/devices/" -> "/de/devices/"
+  eleventyConfig.addFilter("localeUrl", (url, lang) => {
+    const path = String(url).replace(localePrefix, "") || "/";
+    if (lang === i18n.defaultLanguage || !path.startsWith("/") || path.startsWith("//")) return path;
+    return `/${lang}${path}`;
+  });
+
+  // Name, hreflang and og:locale of a language code
+  eleventyConfig.addFilter("languageInfo", (lang) => i18n.languages.find((l) => l.code === lang));
+
+  // Every device page in every other language, generated from the English
+  // page by docs/device-translations.njk
+  eleventyConfig.addCollection("localizedDevices", (api) =>
+    api.getFilteredByTag("device").flatMap((device) => localeCodes.map((lang) => ({ lang, device }))),
+  );
 
   eleventyConfig.addPassthroughCopy("docs/images");
   eleventyConfig.addPassthroughCopy("docs/assets");
@@ -84,14 +127,9 @@ export default function (eleventyConfig) {
       if (list.length > 1) groups.push({ name, devices: list });
       else other.push(...list);
     }
-    if (other.length) groups.push({ name: "Other", devices: other.sort(byTitle) });
-    if (incubating.length) {
-      groups.push({
-        name: "Incubating",
-        note: "Work in progress: expect missing features and rough edges.",
-        devices: incubating,
-      });
-    }
+    // Group names of these two are translated in the template
+    if (other.length) groups.push({ key: "other", devices: other.sort(byTitle) });
+    if (incubating.length) groups.push({ key: "incubating", devices: incubating });
     return groups;
   });
 

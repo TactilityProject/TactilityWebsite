@@ -2,6 +2,7 @@
 layout: base
 ---
 {%- set parts = content.split("<!-- devices -->") %}
+{%- set t = i18n.strings[lang] %}
 <div class="wrap page page-wide">
   <div class="prose">
     <h1>{{ title }}</h1>
@@ -9,17 +10,17 @@ layout: base
   </div>
 
   <form class="device-filter" id="device-filter" hidden>
-    <input type="search" id="device-search" placeholder="Search {{ collections.device.length }} devices" aria-label="Search devices" autocomplete="off">
-    <label class="chip"><input type="checkbox" data-flag="recommended"> ⭐ Recommended</label>
-    <label class="chip"><input type="checkbox" data-flag="psram"> External RAM</label>
-    <label class="chip"><input type="checkbox" data-flag="sdcard"> SD card</label>
+    <input type="search" id="device-search" placeholder="{{ t.devices.search | replace("{count}", collections.device.length) }}" aria-label="{{ t.devices.searchLabel }}" autocomplete="off">
+    <label class="chip"><input type="checkbox" data-flag="recommended"> ⭐ {{ t.badges.recommended }}</label>
+    <label class="chip"><input type="checkbox" data-flag="psram"> {{ t.badges.externalRam }}</label>
+    <label class="chip"><input type="checkbox" data-flag="sdcard"> {{ t.badges.sdCard }}</label>
   </form>
-  <p class="device-empty" id="device-empty" hidden>No devices match.</p>
+  <p class="device-empty" id="device-empty" hidden>{{ t.devices.noMatch }}</p>
 
   {%- for group in collections.device | deviceGroups %}
   <section class="device-group">
-    <h2>{{ group.name }} <span class="count">{{ group.devices.length }}</span></h2>
-    {%- if group.note %}<p class="group-note">{{ group.note }}</p>{% endif %}
+    <h2>{{ t.devices[group.key] if group.key else group.name }} <span class="count">{{ group.devices.length }}</span></h2>
+    {%- if group.key == "incubating" %}<p class="group-note">{{ t.devices.incubatingNote }}</p>{% endif %}
     <ul class="device-grid">
       {%- for item in group.devices %}
       {%- set device = item.data %}
@@ -27,7 +28,7 @@ layout: base
           {%- if device.recommended %} data-recommended{% endif %}
           {%- if device.psram %} data-psram{% endif %}
           {%- if device.sdcard %} data-sdcard{% endif %}>
-        <a href="{{ item.url }}">{{ device.title }}</a>
+        <a href="{{ item.url | localeUrl(lang) }}">{{ device.title }}</a>
         <p class="badges">{% include "badges.njk" %}</p>
       </li>
       {%- endfor %}

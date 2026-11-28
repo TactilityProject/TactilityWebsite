@@ -19,7 +19,7 @@ layout: base
 </section>
 
 <section class="wrap shots">
-  <div class="shots-track" id="shots-track" role="region" aria-label="Screenshots" tabindex="0">
+  <div class="shots-track" id="shots-track" role="region" aria-label="{{ i18n.strings[lang].screenshots }}" tabindex="0">
     {%- for shot in screenshots %}{% if not loop.first %}
     <figure class="bezel">
       {%- set size = shot.src | pngSize %}
@@ -29,10 +29,15 @@ layout: base
     {%- endif %}{% endfor %}
   </div>
   <p class="shots-nav" id="shots-nav" hidden>
-    <button type="button" data-dir="-1" aria-label="Previous screenshots">←</button>
-    <button type="button" data-dir="1" aria-label="Next screenshots">→</button>
+    <button type="button" data-dir="-1" aria-label="{{ i18n.strings[lang].previousScreenshots }}">←</button>
+    <button type="button" data-dir="1" aria-label="{{ i18n.strings[lang].nextScreenshots }}">→</button>
   </p>
-  <p class="shots-more"><a class="btn" href="{{ site.youtube }}">See it in action on YouTube <span aria-hidden="true">→</span></a></p>
+  <p class="shots-more">
+    <a class="logo-tile" href="{{ site.youtube }}">
+      <span class="logo-tile-label">{{ i18n.strings[lang].youtube }}</span>
+      <img src="/images/youtube-logo.svg" alt="YouTube" width="153" height="34" loading="lazy">
+    </a>
+  </p>
 </section>
 <script>
   (function () {
@@ -132,7 +137,7 @@ layout: base
 {%- endif %}
 
 <section class="wrap supporters">
-  <h2>Supported by</h2>
+  <h2>{{ i18n.strings[lang].supportedBy }}</h2>
   <p>
     {%- for item in supporters %}
     <a href="{{ item.url }}"><img src="{{ item.logo }}" alt="{{ item.name }}" height="44" loading="lazy"></a>

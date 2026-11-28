@@ -3,17 +3,17 @@ title: "Community"
 description: "Report bugs, suggest features and join the Tactility community."
 ---
 
-Join us on Matrix or Stoat.chat:
+Join us on Discord, Matrix, Stoat.chat or Reddit:
 
+[![Discord](/images/discord-logo.svg)](https://discord.gg/pXs2xGS6fs)
 [![Matrix](/images/matrix-logo.svg)](https://matrix.to/#/#tactility:matrix.org)
 [![Stoat.chat](/images/stoat-logo.svg)](https://stt.gg/xwRTZEpX)
+[![Reddit](/images/reddit-logo.svg)](https://www.reddit.com/r/Tactility/)
 
-There is also a [Discord](https://discord.gg/pXs2xGS6fs) server and a [Reddit](https://www.reddit.com/r/Tactility/) community.
+Demos and updates are on the YouTube channel:
 
-## Videos
+[![YouTube](/images/youtube-logo.svg)](https://www.youtube.com/@tactility-project)
 
-Demos and updates are on the [YouTube](https://www.youtube.com/@tactility-project) channel.
+Report bugs and suggest features on GitHub:
 
-## Bugs and suggestions
-
-Bugs and suggestions can be reported via [GitHub](https://github.com/TactilityProject/Tactility/issues).
+[![GitHub](/images/github-logo.svg)](https://github.com/TactilityProject/Tactility/issues)

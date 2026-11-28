@@ -18,8 +18,8 @@ layout: base
     {{ content | safe }}
   </article>
   {%- if toc %}
-  <aside class="toc" aria-label="On this page">
-    <p>On this page</p>
+  <aside class="toc" aria-label="{{ i18n.strings[lang].onThisPage }}">
+    <p>{{ i18n.strings[lang].onThisPage }}</p>
     <ul>
       {%- for heading in content | headings %}
       <li><a href="#{{ heading.id }}">{{ heading.text | safe }}</a></li>

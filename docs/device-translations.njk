@@ -1,0 +1,25 @@
+---js
+// The device pages in the other languages (/de/devices/<device>/ etc.): the
+// page chrome is translated, the device details are the English page's content.
+const pagination = { data: "collections.localizedDevices", size: 1, alias: "entry" };
+const permalink = (data) => `/${data.entry.lang}/devices/${data.entry.device.fileSlug}/`;
+const layout = "device";
+const eleventyExcludeFromCollections = true;
+const device = (data) => data.entry.device.data;
+const eleventyComputed = {
+  lang: (data) => data.entry.lang,
+  deviceSlug: (data) => data.entry.device.fileSlug,
+  // The English page is the main version for search engines
+  canonicalUrl: (data) => data.entry.device.url,
+  title: (data) => device(data).title,
+  vendor: (data) => device(data).vendor,
+  psram: (data) => device(data).psram,
+  sdcard: (data) => device(data).sdcard,
+  recommended: (data) => device(data).recommended,
+  community: (data) => device(data).community,
+  incubating: (data) => device(data).incubating,
+  installer: (data) => device(data).installer,
+  description: (data) => data.i18n.strings[data.entry.lang].device.description.replace("{title}", device(data).title),
+};
+---
+{{ entry.device.content | safe }}

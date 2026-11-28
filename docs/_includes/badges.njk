@@ -1,5 +1,6 @@
-{%- if device.recommended %}<span class="star" role="img" aria-label="Recommended" title="Recommended by the developer">⭐</span>{% endif %}
-{%- if device.psram %}<span class="badge badge-yes">External RAM</span>{% else %}<span class="badge badge-warn">No external RAM</span>{% endif %}
-{%- if device.sdcard %}<span class="badge badge-yes">SD card</span>{% else %}<span class="badge badge-no">No SD card</span>{% endif %}
-{%- if device.community %}<span class="badge">Community tested</span>{% endif %}
-{%- if device.incubating %}<span class="badge badge-warn">Incubating</span>{% endif %}
+{%- set b = i18n.strings[lang].badges %}
+{%- if device.recommended %}<span class="star" role="img" aria-label="{{ b.recommended }}" title="{{ b.recommendedTitle }}">⭐</span>{% endif %}
+{%- if device.psram %}<span class="badge badge-yes">{{ b.externalRam }}</span>{% else %}<span class="badge badge-warn">{{ b.noExternalRam }}</span>{% endif %}
+{%- if device.sdcard %}<span class="badge badge-yes">{{ b.sdCard }}</span>{% else %}<span class="badge badge-no">{{ b.noSdCard }}</span>{% endif %}
+{%- if device.community %}<span class="badge">{{ b.communityTested }}</span>{% endif %}
+{%- if device.incubating %}<span class="badge badge-warn">{{ b.incubating }}</span>{% endif %}

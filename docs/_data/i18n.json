@@ -1,0 +1,267 @@
+{
+  "defaultLanguage": "en",
+  "languages": [
+    { "code": "en", "name": "English", "hreflang": "en", "ogLocale": "en_US" },
+    { "code": "de", "name": "Deutsch", "hreflang": "de", "ogLocale": "de_DE" },
+    { "code": "es", "name": "Español", "hreflang": "es", "ogLocale": "es_ES" },
+    { "code": "ja", "name": "日本語", "hreflang": "ja", "ogLocale": "ja_JP" },
+    { "code": "zh", "name": "简体中文", "hreflang": "zh-CN", "ogLocale": "zh_CN" }
+  ],
+  "strings": {
+    "en": {
+      "tagline": "An operating system for ESP32 devices",
+      "description": "Tactility is an operating system for the ESP32 microcontroller family, with a launcher, apps, an App Hub and support for more than 50 devices.",
+      "skip": "Skip to content",
+      "menu": "Menu",
+      "language": "Language",
+      "nav": {
+        "features": "Features",
+        "install": "Install",
+        "devices": "Devices",
+        "useCases": "Use Cases",
+        "community": "Community",
+        "docs": "Docs",
+        "licenses": "Licenses & Copyrights",
+        "devDocs": "Developer documentation"
+      },
+      "onThisPage": "On this page",
+      "screenshots": "Screenshots",
+      "previousScreenshots": "Previous screenshots",
+      "nextScreenshots": "Next screenshots",
+      "youtube": "See it in action",
+      "supportedBy": "Supported by",
+      "badges": {
+        "recommended": "Recommended",
+        "recommendedTitle": "Recommended by the developer",
+        "externalRam": "External RAM",
+        "noExternalRam": "No external RAM",
+        "sdCard": "SD card",
+        "noSdCard": "No SD card",
+        "communityTested": "Community tested",
+        "incubating": "Incubating"
+      },
+      "devices": {
+        "search": "Search {count} devices",
+        "searchLabel": "Search devices",
+        "noMatch": "No devices match.",
+        "other": "Other",
+        "incubating": "Incubating",
+        "incubatingNote": "Work in progress: expect missing features and rough edges."
+      },
+      "device": {
+        "breadcrumb": "Supported devices",
+        "chooseRevision": "Install Tactility: choose your hardware revision",
+        "hardware": "Hardware {label}",
+        "install": "Install Tactility",
+        "notSupported": "(not supported)",
+        "legendNote": "What the status markers and badges mean is explained on the <a href=\"{url}\">supported devices</a> page.",
+        "description": "Tactility on the {title}: supported features, known issues and links.",
+        "englishOnly": ""
+      }
+    },
+    "de": {
+      "tagline": "Ein Betriebssystem für ESP32-Geräte",
+      "description": "Tactility ist ein Betriebssystem für die ESP32-Mikrocontroller-Familie, mit Launcher, Apps, einem App Hub und Unterstützung für mehr als 50 Geräte.",
+      "skip": "Zum Inhalt springen",
+      "menu": "Menü",
+      "language": "Sprache",
+      "nav": {
+        "features": "Funktionen",
+        "install": "Installieren",
+        "devices": "Geräte",
+        "useCases": "Anwendungen",
+        "community": "Community",
+        "docs": "Doku",
+        "licenses": "Lizenzen & Urheberrecht",
+        "devDocs": "Entwicklerdokumentation"
+      },
+      "onThisPage": "Auf dieser Seite",
+      "screenshots": "Screenshots",
+      "previousScreenshots": "Vorherige Screenshots",
+      "nextScreenshots": "Nächste Screenshots",
+      "youtube": "In Aktion sehen",
+      "supportedBy": "Unterstützt von",
+      "badges": {
+        "recommended": "Empfohlen",
+        "recommendedTitle": "Vom Entwickler empfohlen",
+        "externalRam": "Externer RAM",
+        "noExternalRam": "Kein externer RAM",
+        "sdCard": "SD-Karte",
+        "noSdCard": "Keine SD-Karte",
+        "communityTested": "Von der Community getestet",
+        "incubating": "In Entwicklung"
+      },
+      "devices": {
+        "search": "{count} Geräte durchsuchen",
+        "searchLabel": "Geräte durchsuchen",
+        "noMatch": "Keine passenden Geräte.",
+        "other": "Weitere",
+        "incubating": "In Entwicklung",
+        "incubatingNote": "Noch in Arbeit: Es fehlen Funktionen und nicht alles läuft rund."
+      },
+      "device": {
+        "breadcrumb": "Unterstützte Geräte",
+        "chooseRevision": "Tactility installieren: Wähle deine Hardware-Revision",
+        "hardware": "Hardware {label}",
+        "install": "Tactility installieren",
+        "notSupported": "(nicht unterstützt)",
+        "legendNote": "Was die Statussymbole und Kennzeichnungen bedeuten, steht auf der Seite <a href=\"{url}\">Unterstützte Geräte</a>.",
+        "description": "Tactility auf dem {title}: unterstützte Funktionen, bekannte Probleme und Links.",
+        "englishOnly": "Die Gerätedetails gibt es bisher nur auf Englisch."
+      }
+    },
+    "es": {
+      "tagline": "Un sistema operativo para dispositivos ESP32",
+      "description": "Tactility es un sistema operativo para la familia de microcontroladores ESP32, con lanzador, apps, una App Hub y soporte para más de 50 dispositivos.",
+      "skip": "Saltar al contenido",
+      "menu": "Menú",
+      "language": "Idioma",
+      "nav": {
+        "features": "Funciones",
+        "install": "Instalar",
+        "devices": "Dispositivos",
+        "useCases": "Casos de uso",
+        "community": "Comunidad",
+        "docs": "Docs",
+        "licenses": "Licencias y derechos de autor",
+        "devDocs": "Documentación para desarrolladores"
+      },
+      "onThisPage": "En esta página",
+      "screenshots": "Capturas de pantalla",
+      "previousScreenshots": "Capturas anteriores",
+      "nextScreenshots": "Capturas siguientes",
+      "youtube": "Míralo en acción",
+      "supportedBy": "Con el apoyo de",
+      "badges": {
+        "recommended": "Recomendado",
+        "recommendedTitle": "Recomendado por el desarrollador",
+        "externalRam": "RAM externa",
+        "noExternalRam": "Sin RAM externa",
+        "sdCard": "Tarjeta SD",
+        "noSdCard": "Sin tarjeta SD",
+        "communityTested": "Probado por la comunidad",
+        "incubating": "En desarrollo"
+      },
+      "devices": {
+        "search": "Buscar entre {count} dispositivos",
+        "searchLabel": "Buscar dispositivos",
+        "noMatch": "Ningún dispositivo coincide.",
+        "other": "Otros",
+        "incubating": "En desarrollo",
+        "incubatingNote": "Trabajo en curso: faltan funciones y puede haber fallos."
+      },
+      "device": {
+        "breadcrumb": "Dispositivos compatibles",
+        "chooseRevision": "Instalar Tactility: elige la revisión de tu hardware",
+        "hardware": "Hardware {label}",
+        "install": "Instalar Tactility",
+        "notSupported": "(no compatible)",
+        "legendNote": "El significado de los indicadores de estado y las etiquetas se explica en la página de <a href=\"{url}\">dispositivos compatibles</a>.",
+        "description": "Tactility en el {title}: funciones compatibles, problemas conocidos y enlaces.",
+        "englishOnly": "Los detalles de este dispositivo solo están disponibles en inglés por ahora."
+      }
+    },
+    "ja": {
+      "tagline": "ESP32デバイスのためのオペレーティングシステム",
+      "description": "Tactilityは、ESP32マイコンファミリー向けのオペレーティングシステムです。ランチャー、アプリ、App Hubを備え、50種類以上のデバイスに対応しています。",
+      "skip": "本文へスキップ",
+      "menu": "メニュー",
+      "language": "言語",
+      "nav": {
+        "features": "機能",
+        "install": "インストール",
+        "devices": "対応デバイス",
+        "useCases": "活用例",
+        "community": "コミュニティ",
+        "docs": "ドキュメント",
+        "licenses": "ライセンスと著作権",
+        "devDocs": "開発者向けドキュメント"
+      },
+      "onThisPage": "このページの内容",
+      "screenshots": "スクリーンショット",
+      "previousScreenshots": "前のスクリーンショット",
+      "nextScreenshots": "次のスクリーンショット",
+      "youtube": "動作を見る",
+      "supportedBy": "サポーター",
+      "badges": {
+        "recommended": "おすすめ",
+        "recommendedTitle": "開発者のおすすめ",
+        "externalRam": "外部RAM",
+        "noExternalRam": "外部RAMなし",
+        "sdCard": "SDカード",
+        "noSdCard": "SDカードなし",
+        "communityTested": "コミュニティで検証",
+        "incubating": "開発中"
+      },
+      "devices": {
+        "search": "{count}台のデバイスを検索",
+        "searchLabel": "デバイスを検索",
+        "noMatch": "一致するデバイスはありません。",
+        "other": "その他",
+        "incubating": "開発中",
+        "incubatingNote": "開発中のため、未対応の機能や不具合があります。"
+      },
+      "device": {
+        "breadcrumb": "対応デバイス",
+        "chooseRevision": "Tactilityをインストール：ハードウェアのリビジョンを選んでください",
+        "hardware": "ハードウェア {label}",
+        "install": "Tactilityをインストール",
+        "notSupported": "（非対応）",
+        "legendNote": "ステータス記号とバッジの意味は<a href=\"{url}\">対応デバイス</a>のページで説明しています。",
+        "description": "{title}でのTactility：対応機能、既知の問題、リンク。",
+        "englishOnly": "デバイスの詳細は現在英語のみです。"
+      }
+    },
+    "zh": {
+      "tagline": "面向 ESP32 设备的操作系统",
+      "description": "Tactility 是面向 ESP32 微控制器系列的操作系统，提供启动器、应用和 App Hub，支持 50 多款设备。",
+      "skip": "跳到正文",
+      "menu": "菜单",
+      "language": "语言",
+      "nav": {
+        "features": "功能",
+        "install": "安装",
+        "devices": "设备",
+        "useCases": "应用场景",
+        "community": "社区",
+        "docs": "文档",
+        "licenses": "许可与版权",
+        "devDocs": "开发者文档"
+      },
+      "onThisPage": "本页内容",
+      "screenshots": "截图",
+      "previousScreenshots": "上一组截图",
+      "nextScreenshots": "下一组截图",
+      "youtube": "观看演示",
+      "supportedBy": "支持者",
+      "badges": {
+        "recommended": "推荐",
+        "recommendedTitle": "开发者推荐",
+        "externalRam": "外部 RAM",
+        "noExternalRam": "无外部 RAM",
+        "sdCard": "SD 卡",
+        "noSdCard": "无 SD 卡",
+        "communityTested": "社区测试",
+        "incubating": "开发中"
+      },
+      "devices": {
+        "search": "搜索 {count} 款设备",
+        "searchLabel": "搜索设备",
+        "noMatch": "没有匹配的设备。",
+        "other": "其他",
+        "incubating": "开发中",
+        "incubatingNote": "仍在开发中：部分功能缺失，可能存在问题。"
+      },
+      "device": {
+        "breadcrumb": "支持的设备",
+        "chooseRevision": "安装 Tactility：请选择你的硬件版本",
+        "hardware": "硬件 {label}",
+        "install": "安装 Tactility",
+        "notSupported": "（不支持）",
+        "legendNote": "状态标记和标签的含义请参见<a href=\"{url}\">支持的设备</a>页面。",
+        "description": "{title} 上的 Tactility：支持的功能、已知问题和链接。",
+        "englishOnly": "设备详情目前仅提供英文版。"
+      }
+    }
+  }
+}
